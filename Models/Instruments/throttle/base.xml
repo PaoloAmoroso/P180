@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>base.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>base</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+  
+    <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Interior/interior</inherits-from>
+    <object-name>base</object-name>
+    </effect>
+    
+    <animation>
+    <type>scale</type>
+    <object-name>base</object-name>
+    <x-offset>1.8</x-offset>
+    <y-offset>1.2</y-offset>
+    <z-offset>1.0</z-offset>
+    </animation>
+    
+    <animation>
+    <type>material</type>
+    <object-name>base</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instrument-lights</factor-prop>
+      <red>   0.10 </red>
+      <green> 0.10 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+    
+</PropertyList>

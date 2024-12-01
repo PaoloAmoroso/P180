@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>switch-large-rnd.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>lever</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>lever</object-name>
+    <property>controls/engines/engine[1]/magnetos</property>
+    <factor> -10 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>lever</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-cycle</command>
+        <property>controls/engines/engine[1]/magnetos</property>
+        <value>0</value>
+        <value>3</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/switch</property>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>

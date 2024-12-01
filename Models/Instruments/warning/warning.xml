@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>warning.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fond</object-name>
+    <object-name>background</object-name>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning09</object-name>
+    <object-name>warning10</object-name>
+    <object-name>warning11</object-name>
+    <object-name>warning12</object-name>
+    <object-name>warning13</object-name>
+    <object-name>warning14</object-name>
+    <object-name>warning15</object-name>
+    <object-name>warning16</object-name>
+    <object-name>warning17</object-name>
+    <object-name>warning18</object-name>
+    <object-name>warning19</object-name>
+    <object-name>warning20</object-name>
+    <object-name>warning21</object-name>
+    <object-name>warning22</object-name>
+    <object-name>warning23</object-name>
+    <object-name>warning24</object-name>
+    <object-name>warning25</object-name>
+    <object-name>warning26</object-name>
+    <object-name>warning27</object-name>
+    <object-name>warning28</object-name>
+    <object-name>warning29</object-name>
+    <object-name>warning30</object-name>
+    <object-name>warning31</object-name>
+    <object-name>warning32</object-name>
+    <object-name>warning33</object-name>
+    <object-name>warning34</object-name>
+    <object-name>warning35</object-name>
+    <object-name>warning36</object-name>
+    <object-name>warning37</object-name>
+    <object-name>warning38</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>base</object-name>
+    <object-name>back</object-name>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning09</object-name>
+    <object-name>warning10</object-name>
+    <object-name>warning11</object-name>
+    <object-name>warning12</object-name>
+    <object-name>warning13</object-name>
+    <object-name>warning14</object-name>
+    <object-name>warning15</object-name>
+    <object-name>warning16</object-name>
+    <object-name>warning17</object-name>
+    <object-name>warning18</object-name>
+    <object-name>warning19</object-name>
+    <object-name>warning20</object-name>
+    <object-name>warning21</object-name>
+    <object-name>warning22</object-name>
+    <object-name>warning23</object-name>
+    <object-name>warning24</object-name>
+    <object-name>warning25</object-name>
+    <object-name>warning26</object-name>
+    <object-name>warning27</object-name>
+    <object-name>warning28</object-name>
+    <object-name>warning29</object-name>
+    <object-name>warning30</object-name>
+    <object-name>warning31</object-name>
+    <object-name>warning32</object-name>
+    <object-name>warning33</object-name>
+    <object-name>warning34</object-name>
+    <object-name>warning35</object-name>
+    <object-name>warning36</object-name>
+    <object-name>warning37</object-name>
+    <object-name>warning38</object-name>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitre</object-name>
+  </effect>
+
+  <animation>
+    <type>material</type>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning09</object-name>
+    <object-name>warning10</object-name>
+    <object-name>warning11</object-name>
+    <object-name>warning12</object-name>
+    <object-name>warning13</object-name>
+    <object-name>warning14</object-name>
+    <object-name>warning15</object-name>
+    <object-name>warning16</object-name>
+    <object-name>warning17</object-name>
+    <object-name>warning18</object-name>
+    <object-name>warning19</object-name>
+    <object-name>warning20</object-name>
+    <object-name>warning21</object-name>
+    <object-name>warning22</object-name>
+    <object-name>warning23</object-name>
+    <object-name>warning24</object-name>
+    <object-name>warning25</object-name>
+    <object-name>warning26</object-name>
+    <object-name>warning27</object-name>
+    <object-name>warning28</object-name>
+    <object-name>warning29</object-name>
+    <object-name>warning30</object-name>
+    <object-name>warning31</object-name>
+    <object-name>warning32</object-name>
+    <object-name>warning33</object-name>
+    <object-name>warning34</object-name>
+    <object-name>warning35</object-name>
+    <object-name>warning36</object-name>
+    <object-name>warning37</object-name>
+    <object-name>warning38</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instrument-lights</factor-prop>
+      <red>   2 </red>
+      <green> 2 </green>
+      <blue>  2 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>warning01</object-name>
+    <object-name>warning02</object-name>
+    <object-name>warning03</object-name>
+    <object-name>warning04</object-name>
+    <object-name>warning05</object-name>
+    <object-name>warning06</object-name>
+    <object-name>warning07</object-name>
+    <object-name>warning08</object-name>
+    <object-name>warning09</object-name>
+    <object-name>warning10</object-name>
+    <object-name>warning11</object-name>
+    <object-name>warning12</object-name>
+    <object-name>warning13</object-name>
+    <object-name>warning14</object-name>
+    <object-name>warning15</object-name>
+    <object-name>warning16</object-name>
+    <object-name>warning17</object-name>
+    <object-name>warning18</object-name>
+    <object-name>warning19</object-name>
+    <object-name>warning21</object-name>
+    <object-name>warning22</object-name>
+    <object-name>warning23</object-name>
+    <object-name>warning24</object-name>
+    <object-name>warning25</object-name>
+    <object-name>warning26</object-name>
+    <object-name>warning27</object-name>
+    <object-name>warning28</object-name>
+    <object-name>warning29</object-name>
+    <object-name>warning30</object-name>
+    <object-name>warning31</object-name>
+    <object-name>warning32</object-name>
+    <object-name>warning33</object-name>
+    <object-name>warning34</object-name>
+    <object-name>warning35</object-name>
+    <object-name>warning36</object-name>
+    <object-name>warning37</object-name>
+    <object-name>warning38</object-name>
+    <condition>
+      <property>false</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fond</object-name>
+    <object-name>background</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- Cabin Door Annunciator -->
+  <animation>
+    <type>select</type>
+    <object-name>warning20</object-name>
+    <condition>
+      <not-equals>
+        <property>controls/doors/door1/position-norm</property>
+        <value>0</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  <!-- Bingo Fuel -->
+  <animation>
+    <type>select</type>
+    <object-name>warning05</object-name>
+    <condition>
+      <less-than>
+        <property>consumables/fuel/tank[0]/level-lbs</property>
+        <value>150</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>warning05</object-name>
+    <condition>
+      <less-than>
+        <property>consumables/fuel/tank[1]/level-lbs</property>
+        <value>150</value>
+      </less-than>
+    </condition>
+  </animation>
+
+</PropertyList>

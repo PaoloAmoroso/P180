@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>throttle.ac</path>
+  
+  <animation>
+    <object-name>leftthrottle</object-name>
+    <object-name>rightthrottle</object-name>
+  </animation>
+
+<effect>
+   <inherits-from>Aircraft/P180/Models/Effects/Interior/interior</inherits-from>
+    <object-name>leftthrottle</object-name>
+    <object-name>rightthrottle</object-name>
+</effect>
+
+    <model>
+    <name>base</name>
+    <path>base.xml</path>
+    <offsets>
+      <x-m>-0.082</x-m>
+      <y-m>0</y-m>
+      <z-m>-0.0035</z-m>
+      <pitch-deg>270</pitch-deg>
+      <heading-deg>270</heading-deg>
+      <roll-deg>-15</roll-deg>
+    </offsets>
+  </model>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>leftthrottle</object-name>
+    <property>/controls/engines/engine[0]/throttle</property>
+    <factor> -0.16 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> -0.30 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftthrottle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step> 0.1 </step>
+        <min>  0.0 </min>
+        <max>  1.0 </max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>leftthrottle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[0]/throttle</property>
+        <step> -0.1 </step>
+        <min>   0.0 </min>
+        <max>   1.0 </max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>rightthrottle</object-name>
+    <property>/controls/engines/engine[1]/throttle</property>
+    <factor> -0.16 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> -0.30 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>rightthrottle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>3</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step> 0.1 </step>
+        <min>  0.0 </min>
+        <max>  1.0 </max>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>rightthrottle</object-name>
+    <visible>true</visible>
+    <action>
+      <button>4</button>
+      <binding>
+        <command>property-adjust</command>
+        <property>/controls/engines/engine[1]/throttle</property>
+        <step> -0.1 </step>
+        <min>   0.0 </min>
+        <max>   1.0 </max>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>

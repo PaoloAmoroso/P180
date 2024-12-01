@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>pushbutton.ac</path>
+  
+  <animation>
+    <object-name>base</object-name>
+    <object-name>button</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>button</object-name>
+    <property>controls/switches/test-left-ecu-button</property>
+    <factor> -0.003 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>button</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/test-left-ecu-button</property>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>da42.nyi("Test left ecu");</script>
+      </binding>
+      <mod-up>
+        <binding>
+          <command>property-toggle</command>
+          <property>controls/switches/test-left-ecu-button</property>
+        </binding>
+      </mod-up>
+    </action>
+  </animation>
+  
+</PropertyList>
