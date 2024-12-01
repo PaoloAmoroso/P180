@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+    <sim>
+        <description>Piaggio P.180 Avanti</description>
+        <status>alpha</status>
+        <author>Paolo Amoroso, Guillaume Chauvat, MrZac</author>
+        <flight-model>yasim</flight-model>
+        <aero>p-180-yasim</aero>
+        <fuel-fraction>1.0</fuel-fraction>
+        <startup>
+            <splash-texture>Aircraft/P180/P180.png</splash-texture>
+        </startup>
+        
+        <rating>
+            <FDM type="int">     3 </FDM>
+            <systems type="int"> 2 </systems>
+            <cockpit type="int"> 2 </cockpit>
+            <model type="int">   4 </model>
+        </rating>
+
+    <previews>
+      <preview>
+        <splash type="bool">true</splash>
+        <path>Previews/P180.png</path>
+      </preview>
+      <preview>
+        <splash type="bool">true</splash>
+        <path>Previews/P180-1.png</path>
+      </preview>
+      <preview>
+        <splash type="bool">true</splash>
+        <path>Previews/P180-P1HH.png</path>
+      </preview>
+    </previews>
+
+    <mk-viii>
+        <assemblies>
+            <emission>
+                <red alias="/sim/model/P180/material/instruments/emission/red"/>
+                <green alias="/sim/model/P180/material/instruments/emission/green"/>
+                <blue alias="/sim/model/P180/material/instruments/emission/blue"/>
+                <factor alias="/controls/lighting/instruments-norm"/>
+            </emission>
+        </assemblies>
+    </mk-viii>
+
+    <model>
+        <path>Aircraft/P180/Models/P180.xml</path>
+        <p-180>
+            <livery>
+                       <file type="string">Default</file>
+            </livery>
+            <wiper type="bool">true</wiper>
+            <material>
+                <instruments>
+                    <diffuse>
+                        <red type="string">1.0</red>
+                        <green type="string">1.0</green>
+                        <blue type="string">1.0</blue>
+                    </diffuse>
+                    <ambient>
+                        <red type="string">1.0</red>
+                        <green type="string">1.0</green>
+                        <blue type="string">1.0</blue>
+                    </ambient>
+                    <specular>
+                        <red type="string">0.0</red>
+                        <green type="string">0.0</green>
+                        <blue type="string">0.0</blue>
+                    </specular>
+                    <emission>
+                        <red type="string">0.9</red>
+                        <green type="string">0.5</green>
+                        <blue type="string">0.2</blue>
+                    </emission>
+                    <transparency>
+                        <alpha>1.0</alpha>
+                    </transparency>
+                    <shininess>0</shininess>
+                    <factor>0.0</factor>
+                </instruments>
+            </material> 
+        </p-180>
+    </model>
+
+    <chase-distance-m type="double" archive="y"> -15 </chase-distance-m>
+
+    <view n="0">
+        <internal archive="y">true</internal>
+        <name>Cockpit</name>
+        <type>lookfrom</type>
+        <internal type="bool">true</internal>
+        <config>
+            <x-offset-m type="double">-0.30</x-offset-m>
+            <y-offset-m type="double">-0.18</y-offset-m>
+            <z-offset-m type="double">-3.65</z-offset-m>
+            <pitch-offset-deg>-14</pitch-offset-deg>
+            <default-field-of-view-deg>85.0</default-field-of-view-deg>
+        </config>
+    </view>
+
+    <view n="100">
+    <name>Copilot</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.30 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y">-0.18 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y">-3.65 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -14 </pitch-offset-deg>
+      <default-field-of-view-deg>85</default-field-of-view-deg>
+    </config>
+  </view>
+    
+    <view n="101">
+    <name>Passenger Back</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y">  0.36000 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y"> -0.22000 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -0.09000 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg>85</default-field-of-view-deg>
+    </config>
+  </view>
+
+    <view n="102">
+    <name>Passenger Front</name>
+    <type>lookfrom</type>
+    <internal archive="y">true</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y"> -0.37000 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y"> -0.28000 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y"> -1.66400 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg>85</default-field-of-view-deg>
+    </config>
+  </view>
+
+    <view n="103">
+    <name>FLIR</name>
+    <type>lookfrom</type>
+    <internal archive="y">false</internal>
+    <config>
+      <from-model type="bool">true</from-model>
+      <from-model-idx type="int">0</from-model-idx>
+      <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
+      <pitch-offset-deg>-5</pitch-offset-deg>
+      <x-offset-m archive="y"> -0.23220 </x-offset-m> <!-- Right -->
+      <y-offset-m archive="y"> -1.46740 </y-offset-m> <!-- Up    -->
+      <z-offset-m archive="y">  2.73850 </z-offset-m> <!-- Back  -->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg>120</default-field-of-view-deg>
+    </config>
+  </view>
+
+    <current-view>
+        <field-of-view>85.0</field-of-view>
+    </current-view>
+
+    <systems>
+        <electrical>
+            <path></path>
+        </electrical>
+        <!-- ALS Landing Lights-->
+        <property-rule n="101">
+            <path>Systems/als-lights.xml</path>
+        </property-rule>
+        <property-rule n="150"> 
+            <name>p180-systems</name> 
+            <path>Systems/p180-systems.xml</path>
+      </property-rule>
+    </systems>
+    
+    <rendering>
+        <als-secondary-lights>
+            <landing-light1-offset-deg type="float">1.0</landing-light1-offset-deg>
+        </als-secondary-lights>
+   </rendering>
+
+    <sound>
+        <click-thunder1 type="bool">false</click-thunder1>
+        <click-thunder2 type="bool">false</click-thunder2>
+        <click-thunder3 type="bool">false</click-thunder3>
+        <path>Aircraft/P180/Sounds/p-180-sound.xml</path>
+    </sound>
+
+    <flaps>
+        <setting>0.000</setting>
+        <setting>0.50</setting>
+        <setting>1.000</setting>
+    </flaps>
+
+    <hud>
+        <enable3d>false</enable3d>
+    </hud>
+
+    <virtual-cockpit>true</virtual-cockpit>
+    <allow-toggle-cockpit>true</allow-toggle-cockpit>
+
+    <help>
+        <title>Piaggio P.180 Avanti</title>
+        <line></line>
+    <!--
+        <key>
+            <name>CTRL-A</name>
+            <desc>Toggle autopilot on/off</desc>
+        </key>
+        <line></line>
+        <text>Autopilot on with no flightdirector modes selected
+        defaults to Wing-Level;
+        </text>
+        <key>
+            <name>s</name>
+            <desc>Start engine</desc>
+        </key>
+        
+        <key>
+            <name>S</name>
+            <desc>Stop engine</desc>
+        </key>
+    -->
+
+        <key>
+            <name>d</name>
+            <desc>Toggle door</desc>
+        </key>
+        
+        <key>
+            <name>l</name>
+            <desc>Toggle lights</desc>
+        </key>
+
+        <key>
+            <name>Q</name>
+            <desc>Reset View</desc>
+        </key>
+    </help>
+    
+    <menubar include="Dialogs/p180-menu.xml"/>
+
+    <weight n="0">
+        <name>Crew</name>
+        <weight-lb>180</weight-lb>
+        <max-lb>400</max-lb>
+        <min-lb>180</min-lb>
+    </weight>
+
+    <weight n="1">
+        <name>Pax/Baggage</name>
+        <weight-lb>2500</weight-lb>
+        <max-lb>4000</max-lb>
+        <min-lb>0</min-lb>
+    </weight>
+
+    <replay>
+        <disable>1</disable>
+    </replay>
+
+    <multiplay>
+        <chat_display>1</chat_display>
+    </multiplay>
+    
+    <yokes-visible type="bool">1</yokes-visible>
+
+</sim>
+
+    <controls>
+        <init_starting type = "bool">1</init_starting>
+        <electric>
+            <battery-switch type = "bool">1</battery-switch>
+            <avionics-switch type = "bool">1</avionics-switch>
+            <external-power type = "bool">1</external-power>
+             <engine n="0">
+              <generator>true</generator>
+             </engine>
+             <engine n="1">
+              <generator>true</generator>
+             </engine>
+        </electric>
+
+        <lighting>
+            <instrument-lights type = "double">0.0</instrument-lights>
+            <panel type = "double">0.0</panel>
+            <nav-lights type = "double">0.0</nav-lights>
+            <strobe type = "double">0.0</strobe>
+            <beacon type = "double">0.0</beacon>
+        </lighting>
+
+        <gear>
+            <brake-parking>1</brake-parking>
+        </gear>
+
+        <engines>
+            <engine n="0">
+                <condition>0</condition>
+                <rpm type = "double">0.0</rpm>
+                <propeller-pitch>1</propeller-pitch>
+                <throttle type = "double">0</throttle>
+                <n1 type = "double">0.0</n1>
+                <n2 type = "double">0.0</n2>
+                <running type = "bool">false</running>
+            </engine>
+            <engine n="1">
+                <condition>0</condition>
+                <rpm type = "double">0.0</rpm>
+                <propeller-pitch>1</propeller-pitch>
+                <throttle type = "double">0</throttle>
+                <n1 type = "double">0.0</n1>
+                <n2 type = "double">0.0</n2>
+                <running type = "bool">false</running>
+            </engine>
+        </engines>
+
+    </controls>
+
+    <consumables>
+        <fuel>
+            <tank n="0">
+                <tank-num type="int">0</tank-num>
+                <level-gal_us archive="y">238.1</level-gal_us>
+            </tank>
+            <tank n="1">
+                <tank-num type="int">1</tank-num>
+                <level-gal_us archive="y">238.1</level-gal_us>
+            </tank>
+        </fuel>
+    </consumables>
+    
+    <!-- <engines>
+        <engine n="0">
+            <rpm type = "double">0.0</rpm>
+            <n1 type = "double">0.0</n1>
+            <n2 type = "double">0.0</n2>
+            <running type = "bool">false</running>
+        </engine>
+        <engine n="1">
+            <rpm type = "double">0.0</rpm>
+            <n2 type = "double">0.0</n2>
+            <running type = "bool">false</running>
+        </engine>
+    </engines> -->
+
+    <autopilot>
+        <locks>
+            <passive-mode type="bool">true</passive-mode>
+        </locks>
+    </autopilot>
+
+    <instrumentation>
+
+      <zkv1000>
+        <MFD>
+            <status type="bool">false</status>
+        </MFD>
+        <alerts>
+            <!--This values are not calibrated for P180 because it doesn't use the zkv PFD-->
+            <Vr>90</Vr>
+            <Vy>110</Vy>
+            <Vx>110</Vx>
+            <Vglide>90</Vglide> <!--What's that?-->
+            <Vne>405</Vne>
+            <stall-aoa>15</stall-aoa><!--Don't know-->
+            <approach-aoa>4</approach-aoa><!--Maybe-->
+        </alerts>
+        <eis>
+            <type>twin-prop</type>
+        </eis>
+    </zkv1000>
+
+    <tcas>
+      <serviceable type="bool">true</serviceable>
+       <inputs>
+      <mode type="int">1</mode> <!--0=off,1=standby,2=TA-only,3=auto(TA/RA)-->
+       </inputs>
+      <voice>
+        <file-prefix type="string">Aircraft/P180/Sounds/tcas/female/</file-prefix>
+      </voice>
+      <tfc n="0" type="bool">0</tfc>
+      <tfc n="1" type="bool">0</tfc>
+      <speaker>
+        <max-dist type="double">10</max-dist>
+        <reference-dist type="double">1</reference-dist>
+        <volume type="double"> 1 </volume>
+      </speaker>
+     <range type="int">6</range>
+  </tcas>
+
+  <nd>
+    <radar-texture-path type="string">Aircraft/P180/Models/Instruments/mfd-pfd/tcas-display.png</radar-texture-path>
+    <symbol-texture-path type="string">Aircraft/P180/Models/Interior/Panel/Instruments/mfd-pfd/symbols.png</symbol-texture-path>
+    <font>
+      <color>
+        <red type="float">0.7</red>
+        <green type="float">0.7</green>
+        <blue type="float">0.7</blue>
+        <alpha type="float">1</alpha>
+      </color>
+      <name type="string">helvetica_bold.txf</name>
+      <size type="float">14</size>
+      <line-spacing type="float">0.01</line-spacing>
+    </font>
+    <serviceable type="bool">true</serviceable>
+    <range type="int" archive="y">100</range>
+    <aircraft-heading-up type="bool">true</aircraft-heading-up>
+    <heading-up-deg type="float">0.01</heading-up-deg>
+    <x-center type="float">0.5</x-center>
+    <y-center type="float">0.5</y-center>
+    <display>
+      <arpt type="bool">1</arpt>
+      <vor type="bool">1</vor>
+      <fix type="bool">0</fix>
+      <tcas type="bool">0</tcas>
+    </display>
+    <line-width type="double">3</line-width>
+  </nd>
+
+  <tcas-display>
+    <radar-texture-path type="string">Aircraft/P180/Models/Instruments/mfd-pfd/tcas-display.png</radar-texture-path>
+    <symbol-texture-path type="string">Aircraft/P180/Models/Instruments/mfd-pfd/symbols.png</symbol-texture-path>
+    <font>
+      <color>
+        <red type="float">0.7</red>
+        <green type="float">0.7</green>
+        <blue type="float">0.7</blue>
+        <alpha type="float">1</alpha>
+      </color>
+      <name type="string">helvetica_bold.txf</name>
+      <size type="float">14</size>
+      <line-spacing type="float">0.01</line-spacing>
+    </font>
+    <serviceable type="bool">true</serviceable>
+    <range type="int" archive="y">6</range>
+    <aircraft-heading-up type="bool">true</aircraft-heading-up>
+    <heading-up-deg type="float">0.01</heading-up-deg>
+    <x-center type="float">0.5</x-center>
+    <y-center type="float">0.5</y-center>
+    <display>
+    </display>
+    <line-width type="double">3</line-width>
+  </tcas-display>
+
+  <primus2000>
+    <dc840>
+      <hsi type="bool">0</hsi>
+      <wx type="bool">0</wx>
+      <et type="bool">0</et>
+      <tcas type="bool">0</tcas>
+      <acft-sys type="bool">0</acft-sys>
+      <mfd-map type="bool">1</mfd-map>
+      <mfd-wx type="bool">1</mfd-wx>
+      <norm type="bool">0</norm>
+      <abn type="bool">0</abn>
+      <emer type="bool">0</emer>
+      <skp type="bool">0</skp>
+      <pag type="bool">0</pag>
+      <rcl type="bool">0</rcl>
+      <ent type="bool">0</ent>
+    </dc840>
+    <sc840>
+      <nav1ptr type="double">0</nav1ptr>
+      <nav2ptr type="double">0</nav2ptr>
+    </sc840>
+    <eicas>
+      <serviceable type="bool">1</serviceable>
+    </eicas>
+    <mfd>
+      <menu-num type="int">0</menu-num>
+    </mfd>
+    <pfd>
+    </pfd>
+  </primus2000>
+
+  <rmu>
+    <unit n="0">
+      <serviceable type="bool">1</serviceable>
+      <selected type="int">0</selected>
+      <selected-xoffset type="int">0</selected-xoffset>
+      <selected-yoffset type="int">0</selected-yoffset>
+      <com-num type="int">0</com-num>
+      <nav-num type="int">0</nav-num>
+      <adf-num type="int">0</adf-num>
+    </unit>
+    <unit n="1">
+      <serviceable type="bool">1</serviceable>
+      <selected type="int">0</selected>
+      <selected-xoffset type="int">0</selected-xoffset>
+      <selected-yoffset type="int">0</selected-yoffset>
+      <com-num type="int">1</com-num>
+      <nav-num type="int">1</nav-num>
+      <adf-num type="int">1</adf-num>
+    </unit>
+  </rmu>
+
+		<cdu>
+			<display>IDENT</display>
+			<ident>
+				<model>P180</model>
+				<engines>PT6A–66B</engines>
+			</ident>
+			<input type="string"/>
+			<serviceable type = "bool">true</serviceable>
+		</cdu>
+
+        <flightdirector>
+            <lnav type = "double">0</lnav>
+            <vnav type = "double">0</vnav>
+            <alt-offset type = "double">0</alt-offset>
+            <alt-alert type = "double">0</alt-alert>
+            <course type = "double">0</course>
+            <hdg-deg type = "double">0</hdg-deg>
+        </flightdirector>
+
+        <gps>
+            <serviceable>true</serviceable> 
+        </gps>
+
+        <gps-annunciator>
+            <mode-string n="0">POWER ON</mode-string>
+            <mode-string n="1">POWER ON</mode-string>
+        </gps-annunciator>
+
+        <nav>
+            <slaved-to-gps>false</slaved-to-gps>
+        </nav>
+
+        <nav n="1">
+            <slaved-to-gps>false</slaved-to-gps>
+        </nav>
+
+        <mk-viii>
+            <serviceable>true</serviceable>
+            <configuration-module>
+            <category-1>1</category-1>	<!-- GA Fast, 150' Mode 4B -->
+            </configuration-module>
+            <inputs>
+                <arinc429>
+                <decision-height-ncd>false</decision-height-ncd>
+                <decision-height>200</decision-height>
+                </arinc429>
+            </inputs>
+        </mk-viii>
+
+    <altimeter>
+        <millibars type= "double">1</millibars>
+    </altimeter>
+
+    <fmc>
+        <vspeeds>
+            <Vs type= "double">80</Vs>
+            <V1 type= "double">90</V1>
+            <VR type= "double">100</VR>
+            <V2 type= "double">120</V2>
+            <Vne type= "double">405</Vne>
+        </vspeeds>
+        <to-flap>0.5</to-flap>
+    </fmc>
+
+    <radar>
+      <serviceable type="bool" archive="y">true</serviceable>
+      <switch type="string" archive="y">off</switch>
+      <mode-control type="int" archive="y">3</mode-control>
+      <range type="int" archive="y">20</range>
+      <mode type="string" archive="y">WX</mode>
+      <heading-marker type="bool" archive="y">false</heading-marker>
+      <lightning type="bool" archive="y">false</lightning>
+      <display-mode type="string">ARC</display-mode>
+        <display-controls>
+          <WX type="bool" archive="y">false</WX>
+          <data type="bool" archive="y">false</data>
+          <pos type="bool" archive="y">true</pos>
+        </display-controls>
+    </radar>
+
+    </instrumentation>
+
+    <environment>
+        <turbulence>
+        <use-cloud-turbulence>true</use-cloud-turbulence>
+        </turbulence>
+    </environment>
+    
+    <input>
+    <keyboard>
+    <key n="1">
+        <name>Ctrl-A</name>
+        <desc>Toggle autopilot</desc>
+        <binding>
+            <command>property-toggle</command>
+            <property>autopilot/locks/passive-mode</property>
+        </binding>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/sound/switch</property>
+        </binding> 
+    </key>
+
+    <key n="100">
+        <name>d</name>
+        <desc>Toggle door</desc>
+        <binding>
+            <command>nasal</command>
+            <script>p180.doorsystem.door1export();</script>
+        </binding>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/sound/switch</property>
+        </binding> 
+      </key>
+        
+    <key n="108">
+      <name>l</name>
+      <desc>Toggle lights</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>/controls/lighting/instrument-lights</property>
+      </binding>    
+       <binding>
+        <command>property-toggle</command>
+        <property>/sim/sound/switch</property>
+      </binding> 
+    </key>
+    
+    <key n="81">
+      <name>Q</name>
+      <desc>Reset view</desc>
+      <binding>
+        <command>nasal</command>
+        <script>
+          setprop("sim/current-view/field-of-view",      getprop("sim/current-view/config/default-field-of-view-deg"));
+          setprop("sim/current-view/heading-offset-deg", getprop("sim/current-view/config/heading-offset-deg"));
+          setprop("sim/current-view/pitch-offset-deg",   getprop("sim/current-view/config/pitch-offset-deg"));
+          setprop("sim/current-view/roll-offset-deg",    getprop("sim/current-view/config/roll-offset-deg"));
+        </script>
+      </binding>
+    </key>
+
+    </keyboard>
+    </input>
+    
+    <nasal>
+	<p180>
+            <file>Aircraft/P180/Nasal/doors.nas</file>
+            <!-- file>Aircraft/P180/Nasal/p180.nas</file -->
+            <file>Aircraft/P180/Nasal/light.nas</file>
+            <file>Aircraft/P180/Nasal/rain.nas</file>
+            <file>Aircraft/P180/Nasal/map.nas</file>
+            <file>Aircraft/P180/Nasal/dialog.nas</file>
+	</p180>
+
+     <engines>
+      <file>Aircraft/Generic/Engines/generic-yasim-engine.nas</file>
+     </engines>
+
+     <liveries>
+            <file>Aircraft/P180/Nasal/liveries.nas</file>
+     </liveries>
+
+    <p180cdu>
+         <file>Aircraft/P180/Models/Instruments/cdu/p180cdu.nas</file>
+    </p180cdu>
+
+    <m877>
+        <file>Aircraft/P180/Models/Instruments/clock/M877.nas</file>
+    </m877>
+
+    <zkv1000>
+      <file>Aircraft/P180/Models/Instruments/zkv1000/zkv1000.nas</file>
+    </zkv1000>
+
+    <radar>
+      <file>Aircraft/P180/Nasal/radar.nas</file>
+    </radar>
+
+    <terrain-map>
+      <file>Aircraft/P180/Nasal/terrain-map.nas</file>
+    </terrain-map>
+
+    </nasal>
+
+</PropertyList>
