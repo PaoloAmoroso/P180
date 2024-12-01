@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+ <PropertyList>
+
+  <light>
+    <name>LightPanel</name>
+    <type>point</type>
+    <color>
+      <r> 0.5 </r>
+      <g> 0.5 </g>
+      <b> 0.5 </b>
+    </color>
+    <intensity> 5 </intensity>
+    <range-m> 2 </range-m>
+  </light>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>LightPanel</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>LightPanel</object-name>
+    <condition>
+      <property>sim/rendering/hdr/hdr-enabled</property>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+  </animation>
+
+</PropertyList>

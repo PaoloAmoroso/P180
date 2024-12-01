@@ -1,0 +1,2186 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>P180.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/P180/Models/Liveries", 10);
+    </load>
+    <unload>
+      livery_update.stop();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>Udoor1</object-name>
+    <object-name>Ddoor1a</object-name>
+    <object-name>Ddoor1b</object-name>
+    <object-name>antenna1</object-name>
+    <object-name>antenna2</object-name>
+    <object-name>antenna3</object-name>
+    <object-name>antennaFLIR</object-name>
+    <object-name>antennaM1</object-name>
+    <object-name>antennaM2</object-name>
+    <object-name>antennaVOR</object-name>    
+    <object-name>cloison2</object-name>
+    <object-name>Lseat</object-name>
+    <object-name>Lplaque</object-name>
+    <object-name>Rplaque</object-name>
+    <object-name>trappe1</object-name>
+    <object-name>trappe2</object-name>
+    <object-name>trappe3</object-name>
+    <object-name>Ltrappe1</object-name>
+    <object-name>Ltrappe2</object-name>
+    <object-name>Rtrappe1</object-name>
+    <object-name>Rtrappe2</object-name>
+    <object-name>Lwing</object-name>
+    <object-name>Rwing</object-name>
+    <object-name>WingletL</object-name>
+    <object-name>WingletR</object-name>
+    <object-name>Lcanard</object-name>
+    <object-name>Rcanard</object-name>
+    <object-name>LFflap</object-name>
+    <object-name>RFflap</object-name>
+    <object-name>Laileron</object-name>
+    <object-name>Raileron</object-name>
+    <object-name>LOflap</object-name>
+    <object-name>LIflap</object-name>
+    <object-name>ROflap</object-name>
+    <object-name>RIflap</object-name>
+    <object-name>LOsupport1</object-name>
+    <object-name>LOsupport2</object-name>
+    <object-name>LIsupport1</object-name>
+    <object-name>LIsupport2</object-name>
+    <object-name>ROsupport1</object-name>
+    <object-name>ROsupport2</object-name>
+    <object-name>RIsupport1</object-name>
+    <object-name>RIsupport2</object-name>
+    <object-name>Lengine</object-name>
+    <object-name>Lengine2</object-name>
+    <object-name>LLtuyere</object-name>
+    <object-name>LRtuyere</object-name>
+    <object-name>Rengine</object-name>
+    <object-name>Rengine2</object-name>
+    <object-name>RLtuyere</object-name>
+    <object-name>RRtuyere</object-name>
+    <object-name>Lcone</object-name>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <object-name>Rcone</object-name>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <object-name>vstab</object-name>
+    <object-name>vstabTop</object-name>
+    <object-name>rudder</object-name>
+    <object-name>rudderTrim</object-name>
+    <object-name>Lhstab</object-name>
+    <object-name>Lelevator</object-name>
+    <object-name>Rhstab</object-name>
+    <object-name>Relevator</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <object-name>Nroues</object-name>
+    <object-name>Lbogey1</object-name>
+    <object-name>Lbogey2</object-name>
+    <object-name>Lbogey3</object-name>
+    <object-name>Lbogey4</object-name>
+    <object-name>Lbogey5</object-name>
+    <object-name>Lroue</object-name>
+    <object-name>Pitot</object-name>
+    <object-name>Rbogey1</object-name>
+    <object-name>Rbogey2</object-name>
+    <object-name>Rbogey3</object-name>
+    <object-name>Rbogey4</object-name>
+    <object-name>Rbogey5</object-name>
+    <object-name>Rroue</object-name>
+    <object-name>panel_ext</object-name>
+    <object-name>topPanel</object-name>
+    <object-name>topPanelCenter</object-name>
+    <object-name>panel</object-name>
+    <object-name>Lmanche1</object-name>
+    <object-name>Lmanche2</object-name>
+    <object-name>Lmanche3</object-name>
+    <object-name>Rmanche1</object-name>
+    <object-name>Rmanche2</object-name>
+    <object-name>Rmanche3</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>Udoor1</object-name>
+    <object-name>Ddoor1a</object-name>
+    <object-name>Ddoor1b</object-name>
+    <object-name>antenna1</object-name>
+    <object-name>antenna2</object-name>
+    <object-name>antenna3</object-name>
+    <object-name>antennaFLIR</object-name>
+    <object-name>antennaM1</object-name>
+    <object-name>antennaM2</object-name>
+    <object-name>antennaVOR</object-name>
+    <object-name>cloison2</object-name>
+    <object-name>Lseat</object-name>
+    <object-name>Lplaque</object-name>
+    <object-name>Rplaque</object-name>
+    <object-name>trappe1</object-name>
+    <object-name>trappe2</object-name>
+    <object-name>trappe3</object-name>
+    <object-name>Ltrappe1</object-name>
+    <object-name>Ltrappe2</object-name>
+    <object-name>Rtrappe1</object-name>
+    <object-name>Rtrappe2</object-name>
+    <object-name>Lwing</object-name>
+    <object-name>Rwing</object-name>
+    <object-name>WingletL</object-name>
+    <object-name>WingletR</object-name>
+    <object-name>Lcanard</object-name>
+    <object-name>Rcanard</object-name>
+    <object-name>LFflap</object-name>
+    <object-name>RFflap</object-name>
+    <object-name>Laileron</object-name>
+    <object-name>Raileron</object-name>
+    <object-name>LOflap</object-name>
+    <object-name>LIflap</object-name>
+    <object-name>ROflap</object-name>
+    <object-name>RIflap</object-name>
+    <object-name>LOsupport1</object-name>
+    <object-name>LOsupport2</object-name>
+    <object-name>LIsupport1</object-name>
+    <object-name>LIsupport2</object-name>
+    <object-name>ROsupport1</object-name>
+    <object-name>ROsupport2</object-name>
+    <object-name>RIsupport1</object-name>
+    <object-name>RIsupport2</object-name>
+    <object-name>Lengine</object-name>
+    <object-name>Lengine2</object-name>
+    <object-name>LLtuyere</object-name>
+    <object-name>LRtuyere</object-name>
+    <object-name>Rengine</object-name>
+    <object-name>Rengine2</object-name>
+    <object-name>RLtuyere</object-name>
+    <object-name>RRtuyere</object-name>
+    <object-name>Lcone</object-name>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <object-name>Pitot</object-name>
+    <object-name>Rcone</object-name>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <object-name>vstab</object-name>
+    <object-name>vstabTop</object-name>
+    <object-name>rudder</object-name>
+    <object-name>rudderTrim</object-name>
+    <object-name>Lhstab</object-name>
+    <object-name>Lelevator</object-name>
+    <object-name>Rhstab</object-name>
+    <object-name>Relevator</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <object-name>Nroues</object-name>
+    <object-name>Lbogey1</object-name>
+    <object-name>Lbogey2</object-name>
+    <object-name>Lbogey3</object-name>
+    <object-name>Lbogey4</object-name>
+    <object-name>Lbogey5</object-name>
+    <object-name>Lroue</object-name>
+    <object-name>Rbogey1</object-name>
+    <object-name>Rbogey2</object-name>
+    <object-name>Rbogey3</object-name>
+    <object-name>Rbogey4</object-name>
+    <object-name>Rbogey5</object-name>
+    <object-name>Rroue</object-name>
+    <object-name>panel_ext</object-name>
+    <object-name>topPanel</object-name>
+    <object-name>topPanelCenter</object-name>
+    <object-name>panel</object-name>
+    <object-name>Lmanche1</object-name>
+    <object-name>Lmanche2</object-name>
+    <object-name>Lmanche3</object-name>
+    <object-name>Rmanche1</object-name>
+    <object-name>Rmanche2</object-name>
+    <object-name>Rmanche3</object-name>
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>Default.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+  
+    <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Skin/skin-reflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>Udoor1</object-name>
+    <object-name>Ddoor1a</object-name>
+    <object-name>Ddoor1b</object-name>
+    <object-name>antenna1</object-name>
+    <object-name>antenna2</object-name>
+    <object-name>antenna3</object-name>
+    <object-name>antennaFLIR</object-name>
+    <object-name>antennaM1</object-name>
+    <object-name>antennaM2</object-name>
+    <object-name>antennaVOR</object-name>
+    <!-- object-name>cloison2</object-name -->
+    <object-name>Lplaque</object-name>
+    <object-name>Rplaque</object-name>
+    <object-name>trappe1</object-name>
+    <object-name>trappe2</object-name>
+    <object-name>trappe3</object-name>
+    <object-name>Ltrappe1</object-name>
+    <object-name>Ltrappe2</object-name>
+    <object-name>Rtrappe1</object-name>
+    <object-name>Rtrappe2</object-name>
+    <object-name>Lwing</object-name>
+    <object-name>Rwing</object-name>
+    <object-name>WingletL</object-name>
+    <object-name>WingletR</object-name>
+    <object-name>Lcanard</object-name>
+    <object-name>Rcanard</object-name>
+    <object-name>LFflap</object-name>
+    <object-name>RFflap</object-name>
+    <object-name>Laileron</object-name>
+    <object-name>Raileron</object-name>
+    <object-name>LOflap</object-name>
+    <object-name>LIflap</object-name>
+    <object-name>ROflap</object-name>
+    <object-name>RIflap</object-name>
+    <object-name>LOsupport1</object-name>
+    <object-name>LOsupport2</object-name>
+    <object-name>LIsupport1</object-name>
+    <object-name>LIsupport2</object-name>
+    <object-name>ROsupport1</object-name>
+    <object-name>ROsupport2</object-name>
+    <object-name>RIsupport1</object-name>
+    <object-name>RIsupport2</object-name>
+    <object-name>Lengine</object-name>
+    <object-name>Lengine2</object-name>
+    <object-name>LLtuyere</object-name>
+    <object-name>LRtuyere</object-name>
+    <object-name>Rengine</object-name>
+    <object-name>Rengine2</object-name>
+    <object-name>RLtuyere</object-name>
+    <object-name>RRtuyere</object-name>
+    <object-name>Lcone</object-name>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <object-name>Pitot</object-name>
+    <object-name>Rcone</object-name>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <object-name>vstab</object-name>
+    <object-name>vstabTop</object-name>
+    <object-name>rudder</object-name>
+    <object-name>rudderTrim</object-name>
+    <object-name>Lhstab</object-name>
+    <object-name>Lelevator</object-name>
+    <object-name>Rhstab</object-name>
+    <object-name>Relevator</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <object-name>Lbogey1</object-name>
+    <object-name>Lbogey2</object-name>
+    <object-name>Lbogey3</object-name>
+    <object-name>Lbogey4</object-name>
+    <object-name>Lbogey5</object-name>
+    <object-name>Rbogey1</object-name>
+    <object-name>Rbogey2</object-name>
+    <object-name>Rbogey3</object-name>
+    <object-name>Rbogey4</object-name>
+    <object-name>Rbogey5</object-name>
+    </effect>
+    
+    <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Interior/interior</inherits-from>
+    <object-name>panel_ext</object-name>
+    <object-name>topPanel</object-name>
+    <object-name>topPanelCenter</object-name>
+    <object-name>panel</object-name>
+    <object-name>Lmanche1</object-name>
+    <object-name>Lmanche2</object-name>
+    <object-name>Lmanche3</object-name>
+    <object-name>Rmanche1</object-name>
+    <object-name>Rmanche2</object-name>
+    <object-name>Rmanche3</object-name>
+    <object-name>Lseat</object-name>
+  </effect>
+        
+  <animation>
+    <type>noshadow</type>
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </animation>
+
+  <!-- HDR SELECTION - Comment out what do you don't need -->
+  <!-- <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+  </effect> -->
+
+  <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Interior/reflectglass</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+  </effect>
+    
+  <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Glass/glass-rain-inside</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+   </effect>
+   
+   <effect>
+    <inherits-from>Aircraft/P180/Models/Effects/Glass/glass-rain-outside</inherits-from>
+    <object-name>verriere</object-name>
+    <object-name>windows</object-name>
+   </effect>
+
+   <model>
+    <path>Aircraft/P180/Models/Effects/trail/all-trails.xml</path>
+   </model>
+
+  <!-- Left Propeller --> 
+  <animation>
+    <name>Lprop</name>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <object-name>Lcone</object-name>
+    <object-name>propdiscG</object-name>
+    <object-name>propblurG</object-name>
+  </animation>
+
+  <!-- Right Propeller --> 
+  <animation>
+    <name>Rprop</name>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <object-name>Rcone</object-name>
+    <object-name>propdiscD</object-name>
+    <object-name>propblurD</object-name>
+  </animation>
+
+  <!-- Right propeller -->
+  <!-- Selection de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscD</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[1]/rpm</property>
+        <value>1300</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurD</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>engines/engine[1]/rpm</property>
+          <value>400.000</value>
+        </greater-than>
+        <less-than>
+          <property>engines/engine[1]/rpm</property>
+          <value>1300.001</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Rpale1</object-name>
+    <object-name>Rpale2</object-name>
+    <object-name>Rpale3</object-name>
+    <object-name>Rpale4</object-name>
+    <object-name>Rpale5</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[1]/rpm</property>
+	<value>1300</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Rprop</object-name>
+    <property>engines/engine[1]/rpm</property>
+    <factor> 1.5 </factor>
+    <center>
+      <x-m>  3.000 </x-m>
+      <y-m>  2.038 </y-m>
+      <z-m> -0.162 </z-m>
+    </center>
+    <axis>
+      <x> 1.0 </x>
+      <y> 0.0 </y>
+      <z> 0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Right blades pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Rpale1</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rpale2</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>-0.951</y>
+      <z>0.309</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rpale3</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>-0.588</y>
+      <z>-0.809</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rpale4</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.588</y>
+      <z>-0.809</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rpale5</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.951</y>
+      <z>0.309</z>
+    </axis>
+  </animation>
+
+  <!-- Left propeller -->
+  <!-- Selection de l'objet visible en fonction des rpm -->
+  <animation>
+    <type>select</type>
+    <object-name>propdiscG</object-name>
+    <condition>
+      <greater-than>
+        <property>engines/engine[0]/rpm</property>
+        <value>1300</value>
+      </greater-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>propblurG</object-name>
+    <condition>
+      <and>
+        <greater-than>
+          <property>engines/engine[0]/rpm</property>
+          <value>400.000</value>
+        </greater-than>
+        <less-than>
+          <property>engines/engine[0]/rpm</property>
+          <value>1300.001</value>
+        </less-than>
+      </and>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>Lpale1</object-name>
+    <object-name>Lpale2</object-name>
+    <object-name>Lpale3</object-name>
+    <object-name>Lpale4</object-name>
+    <object-name>Lpale5</object-name>
+    <condition>
+      <less-than>
+        <property>engines/engine[0]/rpm</property>
+	<value>1300</value>
+      </less-than>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Lprop</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <factor> 1.5 </factor>
+    <center>
+      <x-m>  3.000 </x-m>
+      <y-m> -2.038 </y-m>
+      <z-m> -0.162 </z-m>
+    </center>
+    <axis>
+      <x> -1.0 </x>
+      <y>  0.0 </y>
+      <z>  0.0 </z>
+    </axis>
+  </animation>
+
+  <!-- Left blades pitch -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Lpale1</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>-2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.0</y>
+      <z>1.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lpale2</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>-2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>-0.951</y>
+      <z>0.309</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lpale3</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>-2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>-0.588</y>
+      <z>-0.809</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lpale4</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>-2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.588</y>
+      <z>-0.809</z>
+    </axis>
+  </animation>
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lpale5</object-name>
+    <property>controls/engines/engine[1]/propeller-pitch</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-0</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-30</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-78</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>3.34</x-m>
+      <y-m>-2.038</y-m>
+      <z-m>-0.162</z-m>
+    </center>
+    <axis>
+      <x>0.0</x>
+      <y>0.951</y>
+      <z>0.309</z>
+    </axis>
+  </animation>
+
+<!-- LANDING GEAR -->
+<!-- Left gear -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Lroue</object-name>
+    <object-name>Lbogey1</object-name>
+    <object-name>Lbogey2</object-name>
+    <object-name>Lbogey3</object-name>
+    <object-name>Lbogey4</object-name>
+    <object-name>Lbogey5</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-110</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-110</dep>
+      </entry>
+      <entry>
+        <ind>0.85</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>1.0</x-m>
+      <y-m>-0.6</y-m>
+      <z-m>-1.0</z-m>
+    </center>
+    <axis>
+      <x>0.064</x>
+      <y>0.45</y>
+      <z>-0.60</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lroue</object-name>
+    <object-name>Lbogey1</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>120</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>120</dep>
+      </entry>
+      <entry>
+        <ind>0.85</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>0.91</x-m>
+      <y-m>-1.25</y-m>
+      <z-m>-1.74</z-m>
+    </center>
+    <axis>
+      <x>0.064</x>
+      <y>-0.40</y>
+      <z>-1.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ltrappe1</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>-90</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>-90</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>0.96</x1-m>
+      <y1-m>-0.80</y1-m>
+      <z1-m>-1.07</z1-m>
+      <x2-m>1.64</x2-m>
+      <y2-m>-0.75</y2-m>
+      <z2-m>-1.04</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ltrappe2</object-name>
+    <property>gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>-105</dep>
+      </entry>
+      <entry>
+        <ind>0.88</ind><dep>-105</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>1.68</x1-m>
+      <y1-m>-0.80</y1-m>
+      <z1-m>-0.93</z1-m>
+      <x2-m>2.41</x2-m>
+      <y2-m>-0.74</y2-m>
+      <z2-m>-0.88</z2-m>
+    </axis>
+  </animation>
+
+<!-- Right gear -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Rroue</object-name>
+    <object-name>Rbogey1</object-name>
+    <object-name>Rbogey2</object-name>
+    <object-name>Rbogey3</object-name>
+    <object-name>Rbogey4</object-name>
+    <object-name>Rbogey5</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>110</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>110</dep>
+      </entry>
+      <entry>
+        <ind>0.85</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>1.0</x-m>
+      <y-m>0.6</y-m>
+      <z-m>-1.0</z-m>
+    </center>
+    <axis>
+      <x>0.064</x>
+      <y>-0.45</y>
+      <z>-0.60</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rroue</object-name>
+    <object-name>Rbogey1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>-120</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>-120</dep>
+      </entry>
+      <entry>
+        <ind>0.85</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>0.91</x-m>
+      <y-m>1.25</y-m>
+      <z-m>-1.74</z-m>
+    </center>
+    <axis>
+      <x>0.064</x>
+      <y>0.40</y>
+      <z>-1.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rtrappe1</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>90</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>0.96</x1-m>
+      <y1-m>0.80</y1-m>
+      <z1-m>-1.07</z1-m>
+      <x2-m>1.64</x2-m>
+      <y2-m>0.75</y2-m>
+      <z2-m>-1.04</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rtrappe2</object-name>
+    <property>gear/gear[2]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>105</dep>
+      </entry>
+      <entry>
+        <ind>0.88</ind><dep>105</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>1.68</x1-m>
+      <y1-m>0.80</y1-m>
+      <z1-m>-0.93</z1-m>
+      <x2-m>2.41</x2-m>
+      <y2-m>0.74</y2-m>
+      <z2-m>-0.88</z2-m>
+    </axis>
+  </animation>
+
+<!-- Nose gear -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Nroues</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>0.15</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>0.85</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>-4.93</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.2</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>trappe3</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.88</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>90</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>-4.79</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.44</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>trappe1</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>-90</dep>
+      </entry>
+      <entry>
+        <ind>0.88</ind><dep>-90</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>-5.72</x1-m>
+      <y1-m>-0.125</y1-m>
+      <z1-m>-1.39</z1-m>
+      <x2-m>-5.11</x2-m>
+      <y2-m>-0.13</y2-m>
+      <z2-m>-1.43</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>trappe2</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>0.88</ind><dep>90</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>0</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>-5.72</x1-m>
+      <y1-m>0.125</y1-m>
+      <z1-m>-1.39</z1-m>
+      <x2-m>-5.11</x2-m>
+      <y2-m>0.13</y2-m>
+      <z2-m>-1.43</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Nroues</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>0.15</factor>   
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Nbogey4</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>-15</factor>
+    <center>
+      <x-m>-4.76</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.73</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Nbogey5</object-name>
+    <object-name>Nbogey4</object-name>
+    <property>gear/gear[0]/compression-norm</property>
+    <factor>15</factor>
+    <center>
+      <x-m>-4.92</x-m>
+      <y-m>0.0</y-m>
+      <z-m>-1.47</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Show/Hide command for Landing Gear Retraction -->
+  <animation>
+    <type>select</type>
+    <object-name>Nroues</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <object-name>Lroue</object-name>
+    <object-name>Lbogey1</object-name>
+    <object-name>Lbogey2</object-name>
+    <object-name>Lbogey3</object-name>
+    <object-name>Lbogey4</object-name>
+    <object-name>Lbogey5</object-name>
+    <object-name>Rroue</object-name>
+    <object-name>Rbogey1</object-name>
+    <object-name>Rbogey2</object-name>
+    <object-name>Rbogey3</object-name>
+    <object-name>Rbogey4</object-name>
+    <object-name>Rbogey5</object-name>
+	<condition>
+		<greater-than>
+			<property>gear/gear[0]/position-norm</property>
+			<value>0.0001</value>
+		</greater-than>
+	</condition>
+  </animation>
+
+  <!-- Elevator -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Lelevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>-12</factor>  
+    <axis>
+      <x1-m>6.30</x1-m>
+      <y1-m>-0.13</y1-m>
+      <z1-m>1.7</z1-m>
+      <x2-m>7.27</x2-m>
+      <y2-m>-2.3</y2-m>
+      <z2-m>1.6</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Relevator</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>12</factor>  
+    <axis>
+      <x1-m>6.30</x1-m>
+      <y1-m>0.13</y1-m>
+      <z1-m>1.7</z1-m>
+      <x2-m>7.27</x2-m>
+      <y2-m>2.3</y2-m>
+      <z2-m>1.6</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Rudder -->
+  <animation>
+    <type>rotate</type>
+    <object-name>rudder</object-name>
+    <object-name>rudderTrim</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-12</factor>  
+    <axis>
+      <x1-m>5.095</x1-m>
+      <y1-m>0.0</y1-m>
+      <z1-m>-0.299</z1-m>
+      <x2-m>6.283</x2-m>
+      <y2-m>0.0</y2-m>
+      <z2-m>1.493</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Nroues</object-name>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-30</factor>  
+    <axis>
+      <x1-m>-4.97</x1-m>
+      <y1-m>0.0</y1-m>
+      <z1-m>-1.50</z1-m>
+      <x2-m>-5.02</x2-m>
+      <y2-m>0.0</y2-m>
+      <z2-m>-1.85</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Flaps -->
+  <animation>
+    <type>translate</type>
+    <object-name>RIflap</object-name>
+    <object-name>LIflap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>0.15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>0.15</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.15</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>ROflap</object-name>
+    <object-name>LOflap</object-name>
+    <object-name>LOsupport2</object-name>
+    <object-name>LIsupport2</object-name>
+    <object-name>ROsupport2</object-name>
+    <object-name>RIsupport2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>0.25</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>0.30</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.15</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LIflap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>-15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-30</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>2.26</x1-m>
+      <y1-m>-0.864</y1-m>
+      <z1-m>-0.40</z1-m>
+      <x2-m>2.24</x2-m>
+      <y2-m>-1.562</y2-m>
+      <z2-m>-0.39</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RIflap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>35</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>2.26</x1-m>
+      <y1-m>0.864</y1-m>
+      <z1-m>-0.40</z1-m>
+      <x2-m>2.24</x2-m>
+      <y2-m>1.562</y2-m>
+      <z2-m>-0.39</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LOflap</object-name>
+    <object-name>LOsupport2</object-name>
+    <object-name>LIsupport2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>-5</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-25</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>1.8</x1-m>
+      <y1-m>-3.02</y1-m>
+      <z1-m>-0.5</z1-m>
+      <x2-m>1.65</x2-m>
+      <y2-m>-4.56</y2-m>
+      <z2-m>-0.3</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>ROflap</object-name>
+    <object-name>ROsupport2</object-name>
+    <object-name>RIsupport2</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>5</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>25</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>1.8</x1-m>
+      <y1-m>3.02</y1-m>
+      <z1-m>-0.5</z1-m>
+      <x2-m>1.65</x2-m>
+      <y2-m>4.56</y2-m>
+      <z2-m>-0.3</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LFflap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>-15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-30</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>-5.64</x1-m>
+      <y1-m>-0.6</y1-m>
+      <z1-m>-1.15</z1-m>
+      <x2-m>-5.62</x2-m>
+      <y2-m>-1.7</y2-m>
+      <z2-m>-1.23</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RFflap</object-name>
+    <property>surface-positions/flap-pos-norm</property>
+    <property>fdm/jsbsim/fcs/flap-pos-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.5</ind><dep>15</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>30</dep>
+      </entry>
+    </interpolation>   
+    <axis>
+      <x1-m>-5.64</x1-m>
+      <y1-m>0.6</y1-m>
+      <z1-m>-1.15</z1-m>
+      <x2-m>-5.62</x2-m>
+      <y2-m>1.7</y2-m>
+      <z2-m>-1.23</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Ailerons -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Laileron</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-12</factor>  
+    <axis>
+      <x1-m>1.65</x1-m>
+      <y1-m>-5.1</y1-m>
+      <z1-m>-0.25</z1-m>
+      <x2-m>1.51</x2-m>
+      <y2-m>-6.9</y2-m>
+      <z2-m>-0.21</z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Raileron</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-12</factor>  
+    <axis>
+      <x1-m>1.65</x1-m>
+      <y1-m>5.1</y1-m>
+      <z1-m>-0.25</z1-m>
+      <x2-m>1.51</x2-m>
+      <y2-m>6.9</y2-m>
+      <z2-m>-0.21</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Yokes -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Lmanche1</object-name>
+    <object-name>Lmanche2</object-name>
+    <object-name>Lmanche3</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-4.18</x-m>
+      <y-m>-0.336</y-m>
+      <z-m>-1.2</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Lmanche2</object-name>
+    <object-name>Lmanche3</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-22</factor>
+    <center>
+      <x-m>-4.18</x-m>
+      <y-m>-0.387</y-m>
+      <z-m>-0.63</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rmanche1</object-name>
+    <object-name>Rmanche2</object-name>
+    <object-name>Rmanche3</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-4.18</x-m>
+      <y-m>0.336</y-m>
+      <z-m>-1.2</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Rmanche2</object-name>
+    <object-name>Rmanche3</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor>-22</factor>
+    <center>
+      <x-m>-4.18</x-m>
+      <y-m>0.387</y-m>
+      <z-m>-0.63</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>Ddoor1a</object-name>
+    <object-name>Ddoor1b</object-name>
+    <object-name>Udoor1</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <less-than>
+              <property>/gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>p180.doorsystem.door1export();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Udoor1</object-name>
+    <property>controls/doors/door1/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>-5</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-170</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.40</x-m>
+      <y-m>-0.85</y-m>
+      <z-m>-0.72</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Ddoor1a</object-name>
+    <object-name>Ddoor1b</object-name>
+    <property>controls/doors/door1/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>0.12</ind><dep>5</dep>
+      </entry>
+      <entry>
+        <ind>0.6</ind><dep>85</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>85</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.0</x-m>
+      <y-m>-0.37</y-m>
+      <z-m>-1.38</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- INTERIORS -->
+  <model>
+    <path>Aircraft/P180/Models/Interiors/all-seats.xml</path>
+  </model>
+
+  <model>
+    <name>Pilot</name>
+    <path>Aircraft/P180/Models/Interiors/pilot.xml</path>
+    <offsets>
+      <x-m> -4.0293 </x-m>
+      <y-m> -0.3862 </y-m>
+      <z-m> -0.8652 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Pilot</object-name>
+    <condition>
+      <not-equals>
+        <property>sim/current-view/name</property>
+        <value>Cockpit</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  <model>
+    <name>CoPilot</name>
+    <path>Aircraft/P180/Models/Interiors/pilot.xml</path>
+    <offsets>
+      <x-m> -4.0293 </x-m>
+      <y-m>  0.3862 </y-m>
+      <z-m> -0.8652 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>CoPilot</object-name>
+    <condition>
+      <or>
+        <property>sim/model/hide-copilot</property>
+        <not-equals>
+          <property>sim/current-view/name</property>
+          <value>Copilot</value>
+        </not-equals>
+      </or>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>CoPilot</object-name>
+    <condition>
+      <property>sim/model/hide-copilot</property>
+    </condition>
+  </animation>
+
+<!-- COCKPIT -->
+
+<animation>
+    <type>material</type>
+    <object-name>topPanel</object-name>
+    <object-name>topPanelCenter</object-name>
+    <object-name>panel</object-name>
+    <condition>
+      <property>controls/electric/battery-switch</property>
+    </condition>
+    <emission>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.40 </green>
+      <blue>  0.30 </blue>
+    </emission>
+  </animation>
+
+  <!-- Main LCD screens -->
+
+  <model>
+    <name>PFD</name>
+    <path>Aircraft/P180/Models/Instruments/mfd-pfd/pfd.xml</path>
+    <offsets>
+      <x-m>-4.4369</x-m>
+      <y-m>-0.33</y-m>
+      <z-m>-0.57</z-m>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.1 </x-offset>
+        <y-offset> 1.1 </y-offset>
+        <z-offset> 1.1 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <name>MFD</name>
+    <path>Aircraft/P180/Models/Instruments/mfd-pfd/mfd.xml</path>
+    <offsets>
+      <x-m>-4.4369</x-m>
+      <y-m> 0.33</y-m>
+      <z-m>-0.57</z-m>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.1</x-offset>
+        <y-offset> 1.1 </y-offset>
+        <z-offset> 1.1 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <name>EICAS</name>
+    <path>Aircraft/P180/Models/Instruments/mfd-pfd/eicas.xml</path>
+    <offsets>
+      <x-m>-4.436900</x-m>
+      <y-m>-0.059137</y-m>
+      <z-m>-0.570720</z-m>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.1 </x-offset>
+        <y-offset> 1.1 </y-offset>
+        <z-offset> 1.1 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+  
+  <!-- Extra instruments -->
+  <model>
+    <name>clkl</name>
+    <path>Aircraft/P180/Models/Instruments/clock/m877.xml</path>
+    <offsets>
+      <x-m>-4.429</x-m>
+      <y-m>-0.55</y-m>
+      <z-m>-0.675</z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <name>clkr</name>
+    <path>Aircraft/P180/Models/Instruments/clock/m877.xml</path>
+    <offsets>
+      <x-m>-4.429</x-m>
+      <y-m>0.55</y-m>
+      <z-m>-0.675</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>compas3d</name>
+    <path>Aircraft/P180/Models/Instruments/comp/mag-compass.xml</path>
+    <offsets>
+      <x-m>-4.283</x-m>
+      <y-m>0.00</y-m>
+      <z-m>-0.2626</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Ai</name>
+    <path>Aircraft/P180/Models/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m>-4.44160</x-m>
+      <y-m> 0.10039</y-m>
+      <z-m>-0.4347</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Annunciators</name>
+    <path>Aircraft/P180/Models/Instruments/warning/warning.xml</path>
+    <offsets>
+      <x-m>-4.43980</x-m>
+      <y-m> 0.10923</y-m>
+      <z-m>-0.56983</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>MCP</name>
+    <path>Aircraft/P180/Models/Instruments/MCP/MCP.xml</path>
+    <offsets>
+      <x-m>-4.26210</x-m>
+      <y-m> 0.00000</y-m>
+      <z-m>-0.29975</z-m>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 0.764 </x-offset>
+        <y-offset> 0.764 </y-offset>
+        <z-offset> 0.764 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <name>RMU</name>
+    <path>Aircraft/P180/Models/Instruments/rmu/rmu1.xml</path>
+    <offsets>
+      <x-m>-4.441900</x-m>
+      <y-m> 0.099087</y-m>
+      <z-m>-0.723130</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>cdu</name>
+    <path>Aircraft/P180/Models/Instruments/cdu/boeing.xml</path>
+    <offsets>
+      <x-m>-3.95</x-m>
+      <y-m>0.00</y-m>
+      <z-m>-1.039</z-m>
+      <pitch-deg>-80</pitch-deg>
+    </offsets>
+    <overlay>
+		<texture>boeing_grey.png</texture>
+    </overlay>
+  </model>
+
+  <model>
+    <name>AudioPanel</name>
+    <path>Aircraft/P180/Models/Instruments/AudioPanel/audiopnl.xml</path>
+    <offsets>
+      <x-m>-3.787</x-m>
+      <y-m> 0.000</y-m>
+      <z-m>-1.065</z-m>
+      <pitch-deg>-80.4</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Switches and Throttle-->
+  <model>
+    <name>starter</name>
+    <path>Aircraft/P180/Models/Instruments/divers/master.xml</path>
+    <offsets>
+      <x-m>-4.4379</x-m>
+      <y-m>-0.0300</y-m>
+      <z-m>-0.782</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>instrumentlights</name>
+    <path>Aircraft/P180/Models/Instruments/divers/instrumentlights.xml</path>
+    <offsets>
+      <x-m>-4.4379</x-m>
+      <y-m> 0.0300</y-m>
+      <z-m>-0.782</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m>-4.14</x-m>
+      <y-m>0.00</y-m>
+      <z-m>-0.972</z-m>
+      <pitch-deg>16</pitch-deg>
+    </offsets>
+  </model>
+  
+  <!-- Pedals -->
+  <model>
+    <name>PedalsLeft</name>
+    <path>Aircraft/P180/Models/Instruments/pedals/pedals.xml</path>
+    <offsets>
+      <x-m>-4.62</x-m>
+      <y-m>-0.31</y-m>
+      <z-m>-1.15</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>PedalsRight</name>
+    <path>Aircraft/P180/Models/Instruments/pedals/pedals.xml</path>
+    <offsets>
+      <x-m>-4.62</x-m>
+      <y-m>0.31</y-m>
+      <z-m>-1.15</z-m>
+    </offsets>
+  </model>
+
+  <!-- EQUIPMENTS -->
+  <animation>
+	<type>select</type>
+      <object-name>WingletL</object-name>
+      <object-name>WingletR</object-name>
+	<condition>
+		<property>sim/model/p180/EVO</property>
+	</condition>
+  </animation>
+
+  <model>
+    <name>FLIR</name>
+    <path>Aircraft/P180/Models/Interiors/flir.xml</path>
+    <offsets>
+      <x-m>  2.707 </x-m>
+      <y-m> -0.181 </y-m>
+      <z-m> -1.151 </z-m>
+      <pitch-deg> -9 </pitch-deg>
+      <roll-deg>  -6 </roll-deg>
+    </offsets>
+    <overlay>
+      <animation n="100">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.3 </x-offset>
+        <y-offset> 1.3 </y-offset>
+        <z-offset> 1.3 </z-offset>
+      </animation>
+    </overlay>
+  </model>
+
+  <model>
+    <name>Console</name>
+    <path>Aircraft/P180/Models/Instruments/Console/Console.xml</path>
+    <offsets>
+      <x-m> -2.414 </x-m>
+      <y-m> -0.452 </y-m>
+      <z-m> -0.420 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>FLIR</object-name>
+    <object-name>antennaFLIR</object-name>
+    <object-name>Console</object-name>
+    <condition>
+      <property>sim/model/hide-FLIR</property>
+    </condition>
+  </animation>
+
+  <animation>
+	<type>select</type>
+	<object-name>antennaM1</object-name>
+	<object-name>antennaM2</object-name>
+	<condition>
+		<property>sim/model/p180/SpecialMission</property>
+	</condition>
+  </animation>
+
+  <animation>
+	<type>select</type>
+     <object-name>WingletsL</object-name>
+     <object-name>WingletsR</object-name>
+	<condition>
+		<property>sim/model/p180/EVO</property>
+	</condition>
+  </animation>
+  
+  <!-- EXTERNAL LIGHTS -->
+  <model>
+    <name>Red-light</name>
+    <path>Aircraft/P180/Models/light/RedLight.xml</path>
+    <offsets>
+      <x-m>  1.070 </x-m>
+      <y-m> -6.970 </y-m>
+      <z-m> -0.200 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Green-light</name>
+    <path>Aircraft/P180/Models/light/GreenLight.xml</path>
+    <offsets>
+      <x-m>  1.070 </x-m>
+      <y-m>  6.970 </y-m>
+      <z-m> -0.200 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>White-light</name>
+    <path>Aircraft/P180/Models/light/WhiteLight.xml</path>
+    <offsets>
+      <x-m>  4.956 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.398 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>StrobeL-light</name>
+    <path>Aircraft/P180/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  1.070 </x-m>
+      <y-m> -6.970 </y-m>
+      <z-m> -0.200 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>StrobeR-light</name>
+    <path>Aircraft/P180/Models/light/StrobeLight.xml</path>
+    <offsets>
+      <x-m>  1.070 </x-m>
+      <y-m>  6.970 </y-m>
+      <z-m> -0.200 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>BeaconA-light</name>
+    <path>Aircraft/P180/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m> 6.006 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.934 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>BeaconB-light</name>
+    <path>Aircraft/P180/Models/light/beacon.xml</path>
+    <offsets>
+      <x-m>  1.700 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.465 </z-m>
+    </offsets>
+  </model>
+    
+    <animation>
+        <type>select</type>
+        <object-name>Red-light</object-name>
+        <object-name>Green-light</object-name>
+        <object-name>White-light</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/nav-lights</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>StrobeL-light</object-name>
+        <object-name>StrobeR-light</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/strobe</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+    <animation>
+        <type>select</type>
+        <object-name>BeaconA-light</object-name>
+        <object-name>BeaconB-light</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/beacon</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+</PropertyList>

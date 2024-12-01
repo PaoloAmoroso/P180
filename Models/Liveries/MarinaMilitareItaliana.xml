@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Marina Militare Italiana</name>
+        <texture>Liveries/MarinaMilitareItaliana.png</texture>
+        <specular>
+          <red>   0.0 </red>
+          <green> 0.0 </green>
+          <blue>  0.0 </blue>
+        </specular>
+      </livery>
+     <p180>
+           <EVO type="bool">false</EVO>
+           <SpecialMission type="bool">true</SpecialMission>
+     </p180>
+    </model>
+  </sim>
+
+</PropertyList>

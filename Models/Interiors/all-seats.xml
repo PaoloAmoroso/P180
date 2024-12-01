@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -2.60 </x-m>
+      <y-m> 0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -1.70 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -1.70 </x-m>
+      <y-m>  0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -0.80 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -0.80 </x-m>
+      <y-m>  0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+  
+      <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -0.10 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -0.10 </x-m>
+      <y-m>  0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
