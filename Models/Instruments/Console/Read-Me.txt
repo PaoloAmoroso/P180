@@ -1,0 +1,13 @@
+===========
+DISCLAIMER:
+
+This "Console System", for security reasons, is not an exact reproduction of the real operational FLIR System, but an adapted version for a simple use on Flightgear, based on public domain information freely avaiable on internet. Surely is not our intention to disclose any classified information.
+This system was developed only for the purpose of increasing, a little, the relism of the simulation, thanks to the author's observations and knowledge of aviation history.
+
+Any reference to a real function, is purely coincidental. The author specifies that this system can be removed from distribution at any time, upon request.
+
+This sistem is, by default, actually limited on a 50 Km range.
+
+=============
+AMOROSO Paolo
+November, 12, 2024

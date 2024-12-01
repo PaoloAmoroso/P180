@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>misclever.ac</path>
+  
+  <animation>
+    <object-name>parkinglever</object-name>
+    <object-name>defrostlever</object-name>
+    <object-name>cabinheatlever</object-name>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>parkinglever</object-name>
+    <property>controls/gear/brake-parking</property>
+    <factor> 0.06 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>parkinglever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/gear/brake-parking</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>defrostlever</object-name>
+    <property>controls/switches/defrost-lever</property>
+    <factor> 0.06 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>defrostlever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/defrost-lever</property>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>da42.nyi("Defrost");</script>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>translate</type>
+    <object-name>cabinheatlever</object-name>
+    <property>controls/switches/cabinheat-lever</property>
+    <factor> 0.06 </factor>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>pick</type>
+    <object-name>cabinheatlever</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/switches/cabinheat-lever</property>
+      </binding>
+      <binding>
+        <command>nasal</command>
+        <script>da42.nyi("Cabin heat");</script>
+      </binding>
+    </action>
+  </animation>
+  
+</PropertyList>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>on-off-R.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>on-off</object-name>
+    <property>controls/electric/engine/generator</property>
+    <factor>  35 </factor>
+    <min-deg>  0 </min-deg>
+    <max-deg> 35 </max-deg>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>on-off.ac</path>
+  
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+<effect>
+   <inherits-from>Aircraft/P180/Models/Effects/Interior/interior</inherits-from>
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+</effect>
+
+	<animation>
+    <type>material</type>
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+    <emission>
+      <factor-prop>controls/lighting/instrument-lights</factor-prop>
+      <red>   0.20 </red>
+      <green> 0.20 </green>
+      <blue>  0.50 </blue>
+    </emission>
+	</animation>
+
+  
+  <animation>
+    <type>pick</type>
+    <object-name>on-off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/instrument-lights</property>
+        <value>1</value>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+        <value>1</value>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/sound/switch</property>
+      </binding>
+    </action>
+  </animation>
+  
+    <animation>
+    <type>rotate</type>
+    <object-name>on-off</object-name>
+    <property>controls/lighting/instrument-lights</property>
+    <property>controls/lighting/nav-lights</property>
+    <factor>  35 </factor>
+    <min-deg>  0 </min-deg>
+    <max-deg> 35 </max-deg>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+  
+</PropertyList>

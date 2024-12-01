@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>on-off.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+
+    <!-- Objets transparents -->
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>tour</object-name>
+    <object-name>on-off</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>on-off</object-name>
+    <property>controls/lighting/nav-lights</property>
+    <factor> -30 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>on-off</object-name>
+    <action>
+      <button>0</button>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/sound/switch</property>
+      </binding>
+    </action>
+  </animation>
+
+</PropertyList>
