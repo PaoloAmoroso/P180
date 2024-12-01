@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PropertyList>
+    
+<filter>
+  <name>Calculate fuel percent for displaying</name>
+  <type>gain</type>
+  <gain>100.0</gain>
+  <input>consumables/fuel/total-fuel-norm</input>
+  <output>consumables/fuel/total-fuel-percent</output>
+</filter>
+
+<filter>
+  <name>Calculate flaps percent for displaying</name>
+  <type>gain</type>
+  <gain>100.0</gain>
+  <input>surface-positions/flap-pos-norm</input>
+  <output>surface-positions/flap-pos-percent</output>
+</filter>
+
+</PropertyList>

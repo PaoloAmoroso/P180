@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <name>Piaggio P.180 Configurations</name>
+  <layout>vbox</layout>
+  <modal>false</modal>
+  <draggable>true</draggable>
+  <resizable>false</resizable>
+
+  <group>
+
+    <layout>hbox</layout>
+
+    <empty>
+      <stretch>false</stretch>
+    </empty>
+    <text>
+      <label>P.180 Configuration</label>
+    </text>
+    <empty><stretch>true</stretch></empty>
+
+    <button>
+      <legend/>
+      <key>Esc</key>
+      <pref-width>16</pref-width>
+      <pref-height>16</pref-height>
+      <binding>
+        <command>nasal</command>
+        <script>p180.config_dialog1.toggle()</script>
+      </binding>
+    </button>
+
+  </group>
+
+  <hrule/>
+
+    <group>
+
+    <text>
+      <label>Cabin Crew:</label>
+    </text>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>Copilot</label>
+      <property>sim/model/hide-Copilot</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/hide-copilot</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+  </group>
+
+  <hrule/>
+
+  <group>
+
+    <text>
+      <label>Configuration:</label>
+    </text>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>FLIR</label>
+      <property>sim/model/hide-FLIR</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/hide-FLIR</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+  </group>
+
+  <hrule/>
+
+
+</PropertyList>

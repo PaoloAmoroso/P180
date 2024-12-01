@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  <default>
+    <menu n="10">
+      <label>Piaggio P.1HH HammerHead</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Autostart</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/instrument-lights</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/panel-norm</property>
+          <value>0.3</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/nav-lights</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/strobe</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/beacon</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/init_starting</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/condition</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[1]/condition</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/sound/switch</property>
+      </binding> 
+        <binding>
+          <command>nasal</command>
+          <script>gui.popupTip("Engines started!")</script>
+        </binding>
+      </item>
+
+      <item>
+        <label>Autostop</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/instrument-lights</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/panel-norm</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/nav-lights</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/strobe</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/lighting/beacon</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/init_starting</property>
+          <value>0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[0]/condition</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
+          <property>controls/engines/engine[1]/condition</property>
+          <value>0.0</value>
+        </binding>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/sound/switch</property>
+      </binding> 
+        <binding>
+          <command>nasal</command>
+          <script>gui.popupTip("Engines stopped!")</script>
+        </binding>
+      </item>
+
+      <item>
+        <label>Aircraft Configuration</label>
+        <binding>
+          <command>nasal</command>
+          <script>p180.config_dialog3.toggle()</script>
+        </binding>
+      </item>
+
+      <!-- <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item> -->
+      <item>
+        <label>Lights</label>
+        <binding>
+          <command>nasal</command>
+          <script>p180.lights_dialog2.toggle()</script>
+        </binding>
+      </item>
+    </menu>
+  </default>
+</PropertyList>
