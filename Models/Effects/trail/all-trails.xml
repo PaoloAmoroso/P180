@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Left -->
+  <model>
+    <path>trailL.xml</path>
+    <offsets>
+      <x-m>  5.010 </x-m>
+      <y-m> -2.038 </y-m>
+      <z-m> -2.162 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Right -->
+  <model>
+    <path>trailR.xml</path>
+    <offsets>
+      <x-m>  5.010 </x-m>
+      <y-m>  2.038 </y-m>
+      <z-m> -2.162 </z-m>
+    </offsets>
+  </model>
+
+</PropertyList>
