@@ -27,7 +27,7 @@
       <pref-height>16</pref-height>
       <binding>
         <command>nasal</command>
-        <script>p180.config_dialog3.toggle()</script>
+        <script>p180.drone_dialog3.toggle()</script>
       </binding>
     </button>
 
