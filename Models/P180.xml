@@ -1901,6 +1901,26 @@
   </model>
 
   <model>
+    <name>MasterWarning</name>
+    <path>Aircraft/P180/Models/Instruments/warning/M_warning.xml</path>
+    <offsets>
+      <x-m>-4.25320</x-m>
+      <y-m>-0.19502</y-m>
+      <z-m>-0.31511</z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>MasterCaution</name>
+    <path>Aircraft/P180/Models/Instruments/warning/M_caution.xml</path>
+    <offsets>
+      <x-m>-4.25320</x-m>
+      <y-m> 0.19502</y-m>
+      <z-m>-0.31511</z-m>
+    </offsets>
+  </model>
+
+  <model>
     <name>MCP</name>
     <path>Aircraft/P180/Models/Instruments/MCP/MCP.xml</path>
     <offsets>
