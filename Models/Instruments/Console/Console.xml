@@ -128,5 +128,35 @@
       <z> 0 </z>
     </axis>
   </animation>
-   
+
+  <!-- RADAR Informations (Show/Hide) -->
+    <animation>
+    <type>pick</type>
+    <visible>true</visible>
+    <object-name>Button1</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>true</repeatable>
+      <binding>
+        <command>property-toggle</command>
+        <property>instrumentation/radar/info</property>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>Button1</object-name>
+    <interpolation>
+      <entry><ind> 1 </ind><dep> -0.002 </dep></entry>
+      <entry><ind> 2 </ind><dep>  0.000 </dep></entry>
+      <entry><ind> 3 </ind><dep>  0.000 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
 </PropertyList>
