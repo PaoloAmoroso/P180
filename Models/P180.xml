@@ -2094,8 +2094,8 @@
     <name>Console</name>
     <path>Aircraft/P180/Models/Instruments/Console/Console.xml</path>
     <offsets>
-      <x-m> -2.414 </x-m>
-      <y-m> -0.452 </y-m>
+      <x-m> -2.545 </x-m>
+      <y-m> -0.428 </y-m>
       <z-m> -0.420 </z-m>
     </offsets>
   </model>
