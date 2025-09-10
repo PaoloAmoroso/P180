@@ -33,6 +33,9 @@
     <object-name>RadomeNose</object-name>    
     <object-name>Support</object-name>    
     <object-name>cloison2</object-name>
+    <object-name>CargoArea</object-name>
+    <object-name>CargoDoor</object-name>    
+    <object-name>CargoDoorInt</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -150,6 +153,9 @@
     <object-name>RadomeNose</object-name>       
     <object-name>Support</object-name>    
     <object-name>cloison2</object-name>
+    <object-name>CargoArea</object-name>
+    <object-name>CargoDoor</object-name>    
+    <object-name>CargoDoorInt</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -1095,6 +1101,94 @@
     </axis>
   </animation>
 
+  <!-- Rotation des roues -->
+  <animation>
+    <type>rotate</type>
+    <object-name>Nbogey1</object-name>
+    <object-name>Nbogey2</object-name>
+    <object-name>Nbogey3</object-name>
+    <object-name>Nbogey4</object-name>
+    <object-name>Nbogey5</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>-30</factor>  
+    <axis>
+      <x1-m>-4.97</x1-m>
+      <y1-m>0.0</y1-m>
+      <z1-m>-1.50</z1-m>
+      <x2-m>-5.02</x2-m>
+      <y2-m>0.0</y2-m>
+      <z2-m>-1.85</z2-m>
+    </axis>
+  </animation>
+
+<animation>
+    <type>rotate</type>
+    <object-name>Nroues</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor>30</factor>
+    <center>
+      <x-m> -5.0202 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.8461 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Nroues</object-name>
+    <property>gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -5.0202 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -1.8461 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Lroue</object-name>
+    <property>gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.90947 </x-m>
+      <y-m> -1.39980 </y-m>
+      <z-m> -1.73720 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>Rroue</object-name>
+    <property>gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  0.90947 </x-m>
+      <y-m>  1.39980 </y-m>
+      <z-m> -1.73720 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
   <!-- Show/Hide command for Landing Gear Retraction -->
   <animation>
     <type>select</type>
@@ -1169,26 +1263,6 @@
       <x2-m>6.283</x2-m>
       <y2-m>0.0</y2-m>
       <z2-m>1.493</z2-m>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>Nroues</object-name>
-    <object-name>Nbogey1</object-name>
-    <object-name>Nbogey2</object-name>
-    <object-name>Nbogey3</object-name>
-    <object-name>Nbogey4</object-name>
-    <object-name>Nbogey5</object-name>
-    <property>surface-positions/rudder-pos-norm</property>
-    <factor>-30</factor>  
-    <axis>
-      <x1-m>-4.97</x1-m>
-      <y1-m>0.0</y1-m>
-      <z1-m>-1.50</z1-m>
-      <x2-m>-5.02</x2-m>
-      <y2-m>0.0</y2-m>
-      <z2-m>-1.85</z2-m>
     </axis>
   </animation>
 
@@ -1527,7 +1601,7 @@
           </and>
         </condition>
         <command>nasal</command>
-        <script>p180.doorsystem.door1export();</script>
+        <script>doors.crew.toggle();</script>
       </binding>
     </action>
   </animation>
@@ -1535,7 +1609,7 @@
   <animation>
     <type>rotate</type>
     <object-name>Udoor1</object-name>
-    <property>controls/doors/door1/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry>
         <ind>0</ind><dep>0</dep>
@@ -1563,7 +1637,7 @@
     <type>rotate</type>
     <object-name>Ddoor1a</object-name>
     <object-name>Ddoor1b</object-name>
-    <property>controls/doors/door1/position-norm</property>
+    <property>sim/model/door-positions/crew/position-norm</property>
     <interpolation>
       <entry>
         <ind>0</ind><dep>0</dep>
@@ -1587,6 +1661,78 @@
       <x>1</x>
       <y>0</y>
       <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Baggage Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>CargoDoor</object-name>
+    <object-name>CargoDoorInt</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <less-than>
+              <property>/gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.cargo.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CargoDoor</object-name>
+    <object-name>CargoDoorInt</object-name>
+    <property>sim/model/door-positions/cargo/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>3.01</x-m>
+      <y-m>-0.42</y-m>
+      <z-m>-0.10</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>CargoDoor</object-name>
+    <object-name>CargoDoorInt</object-name>
+    <property>sim/model/door-positions/cargo/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-0.10</dep>
+      </entry>
+    </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
     </axis>
   </animation>
 
