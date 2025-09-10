@@ -217,7 +217,30 @@
     <object-name>warning20</object-name>
     <condition>
       <not-equals>
-        <property>controls/doors/door1/position-norm</property>
+        <property>sim/model/door-positions/crew/position-norm</property>
+        <value>0</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  <!-- Baggage Door Annunciator -->
+  <animation>
+    <type>select</type>
+    <object-name>warning23</object-name>
+    <condition>
+      <not-equals>
+        <property>sim/model/door-positions/cargo/position-norm</property>
+        <value>0</value>
+      </not-equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>warning24</object-name>
+    <condition>
+      <not-equals>
+        <property>sim/model/door-positions/cargo/position-norm</property>
         <value>0</value>
       </not-equals>
     </condition>
