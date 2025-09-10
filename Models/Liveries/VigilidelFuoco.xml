@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Vigili del Fuoco</name>
+        <texture>Liveries/VigilidelFuoco.png</texture>
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+      </livery>
+     <p180>
+           <EVO type="bool">false</EVO>
+           <SpecialMission type="bool">false</SpecialMission>
+     </p180>
+    </model>
+  </sim>
+
+</PropertyList>
