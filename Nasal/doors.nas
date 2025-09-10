@@ -2,23 +2,6 @@
 # Doors
 # =====
 
-Doors = {};
+crew       = aircraft.door.new("/sim/model/door-positions/crew", 2, 0 );
 
-Doors.new = func {
-   obj = { parents : [Doors],
-           door1 : aircraft.door.new("controls/doors/door1", 4.0)
-         };
-   return obj;
-};
-
-Doors.door1export = func {
-   me.door1.toggle();
-}
-
-# ==============
-# Initialization
-# ==============
-
-# objects must be here, otherwise local to init()
-doorsystem = Doors.new();
-
+cargo  = aircraft.door.new("/sim/model/door-positions/cargo", 2, 0 );
