@@ -91,6 +91,26 @@
       </binding>
     </checkbox>
 
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>EVS</label>
+      <property>sim/model/hide-EVS</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/hide-EVS</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
   </group>
 
   <hrule/>
