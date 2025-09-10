@@ -75,12 +75,12 @@
     <padding>6</padding>
     <checkbox>
       <halign>left</halign>
-      <label>FLIR</label>
-      <property>sim/model/hide-FLIR</property>
+      <label>EVS</label>
+      <property>sim/model/hide-EVS</property>
       <live>true</live>
       <binding>
         <command>property-toggle</command>
-        <property>sim/model/hide-FLIR</property>
+        <property>sim/model/hide-EVS</property>
         <value>1</value>
       </binding>
       <binding>
@@ -95,12 +95,12 @@
     <padding>6</padding>
     <checkbox>
       <halign>left</halign>
-      <label>EVS</label>
-      <property>sim/model/hide-EVS</property>
+      <label>FLIR</label>
+      <property>sim/model/hide-FLIR</property>
       <live>true</live>
       <binding>
         <command>property-toggle</command>
-        <property>sim/model/hide-EVS</property>
+        <property>sim/model/hide-FLIR</property>
         <value>1</value>
       </binding>
       <binding>
