@@ -238,12 +238,17 @@
 
         <key>
             <name>d</name>
-            <desc>Toggle door</desc>
+            <desc>Toggle Door</desc>
+        </key>
+
+        <key>
+            <name>D</name>
+            <desc>Toggle Cargo Door</desc>
         </key>
         
         <key>
             <name>l</name>
-            <desc>Toggle lights</desc>
+            <desc>Toggle Lights</desc>
         </key>
 
         <key>
@@ -615,13 +620,26 @@
         <desc>Toggle door</desc>
         <binding>
             <command>nasal</command>
-            <script>p180.doorsystem.door1export();</script>
+            <script>doors.crew.toggle();</script>
         </binding>
         <binding>
             <command>property-toggle</command>
             <property>/sim/sound/switch</property>
         </binding> 
-      </key>
+    </key>
+
+    <key n="68">
+        <name>D</name>
+        <desc>Toggle Cargo door</desc>
+        <binding>
+            <command>nasal</command>
+            <script>doors.cargo.toggle();</script>
+        </binding>
+        <binding>
+            <command>property-toggle</command>
+            <property>/sim/sound/switch</property>
+        </binding> 
+    </key>
         
     <key n="108">
       <name>l</name>
@@ -659,13 +677,16 @@
     
     <nasal>
 	<p180>
-            <file>Aircraft/P180/Nasal/doors.nas</file>
             <!-- file>Aircraft/P180/Nasal/p180.nas</file -->
             <file>Aircraft/P180/Nasal/light.nas</file>
             <file>Aircraft/P180/Nasal/rain.nas</file>
             <file>Aircraft/P180/Nasal/map.nas</file>
             <file>Aircraft/P180/Nasal/dialog.nas</file>
 	</p180>
+
+     <doors>
+            <file>Aircraft/P180/Nasal/doors.nas</file>
+     </doors>
 
      <engines>
       <file>Aircraft/Generic/Engines/generic-yasim-engine.nas</file>
