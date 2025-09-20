@@ -283,6 +283,15 @@
     
     <yokes-visible type="bool">1</yokes-visible>
 
+    <aircraft-data>
+        <path>/sim/model/hide-Copilot</path>
+        <path>/sim/model/commuter</path> 
+        <path>/sim/model/executive</path> 
+        <path>/sim/model/HEMS</path> 
+        <path>/sim/model/hide-EVS</path>
+        <path>/sim/model/hide-FLIR</path> 
+    </aircraft-data>
+
 </sim>
 
     <controls>

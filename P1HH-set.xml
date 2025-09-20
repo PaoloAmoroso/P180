@@ -82,6 +82,11 @@
         </p-180>
     </model>
 
+    <submodels>
+      <serviceable   type="bool">true</serviceable>
+      <path>Aircraft/P180/Models/Effects/Release.xml</path>
+    </submodels>
+
     <chase-distance-m type="double" archive="y"> -15 </chase-distance-m>
 
     <view n="0">
@@ -93,7 +98,7 @@
             <x-offset-m type="double"> 0.00</x-offset-m>
             <y-offset-m type="double">-1.80</y-offset-m>
             <z-offset-m type="double">-6.26</z-offset-m>
-            <pitch-offset-deg>-5</pitch-offset-deg>
+            <pitch-offset-deg>0</pitch-offset-deg>
             <default-field-of-view-deg>120.0</default-field-of-view-deg>
         </config>
     </view>
@@ -240,6 +245,16 @@
         </key>
 
         <key>
+            <name>r</name>
+            <desc>Weapons Launch</desc>
+        </key>
+
+        <key>
+            <name>q</name>
+            <desc>Flares Launch</desc>
+        </key>
+
+        <key>
             <name>Q</name>
             <desc>Reset View</desc>
         </key>
@@ -261,6 +276,19 @@
     <multiplay>
         <chat_display>1</chat_display>
     </multiplay>
+
+    <aircraft-data>
+        <path>/sim/model/show-Support</path>
+        <path>/sim/model/show-Radar</path> 
+    </aircraft-data>
+
+    <ai>
+      <submodels>
+        <brimstone2-number type="int">2</brimstone2-number>
+        <brimstone4-number type="int">4</brimstone4-number>
+        <GBU54-number type="int">2</GBU54-number>
+      </submodels>
+    </ai>
     
 </sim>
 
@@ -756,6 +784,86 @@
 	   <command>property-toggle</command>
 	   <property>/sim/hud/current-color</property>
 	 </binding>
+    </key>
+
+    <key n="114">
+      <name>r</name>
+      <desc>Release Weapons</desc>
+      <binding>
+        <command>nasal</command>
+        <script><![CDATA[
+
+      # Brimstone 2x
+            if ((getprop("/sim/model/show-brimstone2")) and !getprop("/sim/launching-brimstone2")) {
+        var brimstone2Count = getprop("ai/submodels/brimstone2-number");
+        if (brimstone2Count > 0 and brimstone2Count <= 2) {
+          setprop("/sim/launching-brimstone2", 1);
+
+          var triggerPath = "/controls/signal" ~ (3 - brimstone2Count); #(3 - 2) = 1 allora "signal1" e (3 - 1) = 2 allora "signal2"
+          setprop(triggerPath, 1);
+
+          settimer(func() { setprop(triggerPath, 0); }, 0.2);
+          settimer(func() {
+            setprop("ai/submodels/brimstone2-number", brimstone2Count - 1);
+            setprop("/sim/launching-brimstone2", 0);
+          }, 0.3);
+        }
+      }
+
+      # Brimstone 4x
+            if ((getprop("/sim/model/show-brimstone4")) and !getprop("/sim/launching-brimstone4")) {
+        var brimstone4Count = getprop("ai/submodels/brimstone4-number");
+        if (brimstone4Count > 0 and brimstone4Count <= 4) {
+          setprop("/sim/launching-brimstone4", 1);
+
+          var triggerPath = "/controls/signal" ~ (7 - brimstone4Count); #(7 - 4) = 3 allora "signal3" e (7 - 3) = 4 allora "signal4" e (7 - 2) = 5 allora "signal5" e (7 - 1) = 6 allora "signal6" 
+          setprop(triggerPath, 1);
+
+          settimer(func() { setprop(triggerPath, 0); }, 0.2);
+          settimer(func() {
+            setprop("ai/submodels/brimstone4-number", brimstone4Count - 1);
+            setprop("/sim/launching-brimstone4", 0);
+          }, 0.3);
+        }
+      }
+
+      # GBU-54 2x
+            if ((getprop("/sim/model/show-GBU54")) and !getprop("/sim/launching-GBU54")) {
+        var GBU54Count = getprop("ai/submodels/GBU54-number");
+        if (GBU54Count > 0 and GBU54Count <= 4) {
+          setprop("/sim/launching-GBU54", 1);
+
+          var triggerPath = "/controls/signal" ~ (9 - GBU54Count); #(9 - 2) = 7 allora "signal7" e (9 - 1) = 8 allora "signal8"
+          setprop(triggerPath, 1);
+
+          settimer(func() { setprop(triggerPath, 0); }, 0.2);
+          settimer(func() {
+            setprop("ai/submodels/GBU54-number", GBU54Count - 1);
+            setprop("/sim/launching-GBU54", 0);
+          }, 0.3);
+        }
+      }
+
+
+       ]]></script>
+     </binding>
+   </key>
+
+    <key n="113">
+	 <name>q</name>
+     <desc>Trigger flare release</desc>
+     <binding>
+      <command>property-toggle</command>
+      <property>flares/release</property>
+      <value type="bool">true</value>
+     </binding>
+     <mod-up>
+      <binding>
+       <command>property-assign</command>
+      <property>flares/release</property>
+       <value type="bool">false</value>
+      </binding>
+     </mod-up>
     </key>
 
     </keyboard>
