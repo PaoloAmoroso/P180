@@ -247,7 +247,7 @@
     <object-name>Rmanche3</object-name>
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
-    <texture>Default.png</texture>
+    <texture>P1HH.png</texture>
     <specular>
       <red-prop>specular/red</red-prop>
       <green-prop>specular/green</green-prop>
@@ -265,6 +265,10 @@
     
    <model>
     <path>Aircraft/P180/Models/Effects/trail/all-trails.xml</path>
+   </model>
+
+   <model>
+    <path>Aircraft/P180/Models/Effects/Weapons/all-weapons.xml</path>
    </model>
 
   <!-- Left Propeller --> 

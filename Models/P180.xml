@@ -1899,20 +1899,17 @@
     </offsets>
   </model>
 
-  <!-- animation>
-    <type>select</type>
-    <object-name>CoPilot</object-name>
-    <condition>
-          <property>sim/current-view/name</property>
-          <value>Copilot</value>
-    </condition>
-  </animation -->
-
   <animation>
     <type>select</type>
     <object-name>CoPilot</object-name>
     <condition>
-      <property>sim/model/hide-copilot</property>
+      <and>
+        <property>sim/model/hide-copilot</property>
+        <not-equals>
+          <property>sim/current-view/name</property>
+          <value>Copilot</value>
+        </not-equals>
+      </and>
     </condition>
   </animation>
 
@@ -2184,6 +2181,15 @@
       <y-m>0.00</y-m>
       <z-m>-0.972</z-m>
       <pitch-deg>16</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/P180/Models/Instruments/switches/gearlever.xml</path>
+    <offsets>
+      <x-m>-4.44</x-m>
+      <y-m>-0.15</y-m>
+      <z-m>-0.78</z-m>
     </offsets>
   </model>
   
