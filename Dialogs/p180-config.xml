@@ -75,6 +75,98 @@
     <padding>6</padding>
     <checkbox>
       <halign>left</halign>
+      <label>Commuter</label>
+      <property>sim/model/commuter</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/commuter</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/executive</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/HEMS</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>Executive</label>
+      <property>sim/model/executive</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/executive</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/commuter</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/HEMS</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>HEMS</label>
+      <property>sim/model/HEMS</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/HEMS</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/commuter</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/executive</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+  <hrule/>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
       <label>EVS</label>
       <property>sim/model/hide-EVS</property>
       <live>true</live>
@@ -114,6 +206,5 @@
   </group>
 
   <hrule/>
-
 
 </PropertyList>
