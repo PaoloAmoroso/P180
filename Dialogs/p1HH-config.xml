@@ -81,10 +81,165 @@
       </binding>
     </checkbox>
 
+  </group>
+
+  <hrule/>
+
+    <group>
+
+    <text>
+      <label>Weapons:</label>
+    </text>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>Brimstone 2x</label>
+      <property>sim/model/show-brimstone2</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/show-brimstone2</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-Support</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-brimstone4</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-GBU54</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>Brimstone 4x</label>
+      <property>sim/model/show-brimstone4</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/show-brimstone4</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-Support</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-brimstone2</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-GBU54</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
+
+    <layout>vbox</layout>
+    <padding>6</padding>
+    <checkbox>
+      <halign>left</halign>
+      <label>GBU-54</label>
+      <property>sim/model/show-GBU54</property>
+      <live>true</live>
+      <binding>
+        <command>property-toggle</command>
+        <property>sim/model/show-GBU54</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-Support</property>
+        <value>1</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-brimstone2</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>sim/model/show-brimstone4</property>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>nasal</command>
+      </binding>
+      <binding>
+        <command>dialog-update</command>
+      </binding>
+    </checkbox>
 
   </group>
 
   <hrule/>
 
+  <group>
+
+    <layout>vbox</layout>
+    <button>
+      <row>0</row>
+      <legend>RELOAD WEAPONS</legend>
+        <binding>
+          <command>nasal</command>
+          <script>
+          setprop("ai/submodels/brimstone2-number", 2);
+          setprop("controls/signal1", 0);
+          setprop("controls/signal2", 0);
+
+          setprop("ai/submodels/brimstone4-number", 4);
+          setprop("controls/signal3", 0);
+          setprop("controls/signal4", 0);
+          setprop("controls/signal5", 0);
+          setprop("controls/signal6", 0);
+
+          setprop("ai/submodels/GBU54-number", 2);
+          setprop("controls/signal7", 0);
+          setprop("controls/signal8", 0);
+
+          </script>
+        </binding>
+
+      <binding>
+        <command>nasal</command>
+        <script>
+          if (!getprop("gear/gear[0]/wow")) {
+            screen.log.write("This is only possible on ground.");
+            return;
+          }
+          if (getprop("gear/gear[0]/position-norm")) {
+            screen.log.write("Weapons Reloaded.");
+          }
+        </script>
+      </binding>
+    </button>
+
+  </group>
 
 </PropertyList>
