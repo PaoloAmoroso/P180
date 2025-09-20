@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
-
+<!-- Commuter Configuration -->
   <model>
+    <name>Seat-1</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
       <x-m> -2.60 </x-m>
-      <y-m> 0.37 </y-m>
+      <y-m>  0.37 </y-m>
       <z-m> -0.84 </z-m>
     </offsets>
   </model>
 
   <model>
+    <name>Seat-2</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
       <x-m> -1.70 </x-m>
@@ -21,6 +23,7 @@
   </model>
 
   <model>
+    <name>Seat-3</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
       <x-m> -1.70 </x-m>
@@ -30,6 +33,7 @@
   </model>
   
     <model>
+    <name>Seat-4</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
       <x-m> -0.80 </x-m>
@@ -39,6 +43,7 @@
   </model>
 
   <model>
+    <name>Seat-5</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
       <x-m> -0.80 </x-m>
@@ -47,22 +52,207 @@
     </offsets>
   </model>
   
-      <model>
+  <model>
+    <name>Seat-6</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
-      <x-m> -0.10 </x-m>
+      <x-m>  0.10 </x-m>
       <y-m> -0.37 </y-m>
       <z-m> -0.84 </z-m>
     </offsets>
   </model>
 
   <model>
+    <name>Seat-7</name>
     <path>Aircraft/P180/Models/Interiors/seat.xml</path>
     <offsets>
-      <x-m> -0.10 </x-m>
+      <x-m>  0.10 </x-m>
       <y-m>  0.37 </y-m>
       <z-m> -0.84 </z-m>
     </offsets>
   </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Seat-1</object-name>
+    <object-name>Seat-2</object-name>
+    <object-name>Seat-3</object-name>
+    <object-name>Seat-4</object-name>
+    <object-name>Seat-5</object-name>
+    <object-name>Seat-6</object-name>
+    <object-name>Seat-7</object-name>
+    <condition>
+      <property>sim/model/commuter</property>
+    </condition>
+  </animation>
+
+<!-- Executive Configuration -->
+  <model>
+    <name>Seat-1L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m> -2.54490 </x-m>
+      <y-m>  0.34243 </y-m>
+      <z-m> -0.79006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat-2L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m> -1.70720 </x-m>
+      <y-m> -0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat-3L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m> -1.70720 </x-m>
+      <y-m>  0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+    </offsets>
+  </model>
+  
+    <model>
+    <name>Seat-4L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m> -1.23190 </x-m>
+      <y-m> -0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat-5L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m> -1.23190 </x-m>
+      <y-m>  0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Seat-6L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m>  0.08213 </x-m>
+      <y-m> -0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat-7L</name>
+    <path>Aircraft/P180/Models/Interiors/seatL.xml</path>
+    <offsets>
+      <x-m>  0.08213 </x-m>
+      <y-m>  0.37781 </y-m>
+      <z-m> -0.79006 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Table-1</name>
+    <path>table.xml</path>
+    <offsets>
+      <x-m> -0.57488 </x-m>
+      <y-m> -0.67135 </y-m>
+      <z-m> -0.67608 </z-m>
+      <heading-deg> 180 </heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Table-2</name>
+    <path>table.xml</path>
+    <offsets>
+      <x-m> -0.57488 </x-m>
+      <y-m>  0.67135 </y-m>
+      <z-m> -0.67608 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Seat-1L</object-name>
+    <object-name>Seat-2L</object-name>
+    <object-name>Seat-3L</object-name>
+    <object-name>Seat-4L</object-name>
+    <object-name>Seat-5L</object-name>
+    <object-name>Seat-6L</object-name>
+    <object-name>Seat-7L</object-name>
+    <object-name>Table-1</object-name>
+    <object-name>Table-2</object-name>
+    <condition>
+      <property>sim/model/executive</property>
+    </condition>
+  </animation>
+
+<!-- HEMS Configuration -->
+  <model>
+    <name>Seat-1H</name>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -1.70 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <name>Seat-2H</name>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m> -0.80 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  
+  <model>
+    <name>Seat-3H</name>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m>  0.10 </x-m>
+      <y-m> -0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Seat-4H</name>
+    <path>Aircraft/P180/Models/Interiors/seat.xml</path>
+    <offsets>
+      <x-m>  0.10 </x-m>
+      <y-m>  0.37 </y-m>
+      <z-m> -0.84 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>HEMS</name>
+    <path>HEMS.xml</path>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Seat-1H</object-name>
+    <object-name>Seat-2H</object-name>
+    <object-name>Seat-3H</object-name>
+    <object-name>Seat-4H</object-name>
+    <object-name>HEMS</object-name>
+    <condition>
+      <property>sim/model/HEMS</property>
+    </condition>
+  </animation>
 
 </PropertyList>
