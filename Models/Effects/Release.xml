@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- Brimstone Missile -->
+  <missile>
+    <model>Aircraft/P180/Models/Effects/Weapons/Brimstone.xml</model>
+    <speed>980</speed>
+    <repeat>false</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <life>1000</life>
+    <wind>false</wind>
+    <weight>500</weight>
+    <cd>0.295</cd>
+    <eda>0.61629</eda>
+    <fuse-range>2.2</fuse-range>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/P180/Models/Effects/Weapons/Impact/bomb-impact.xml</submodel-path>
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset>0</pitch-offset>
+  </missile>
+
+  <!-- Brimstone Launcher -->
+  <submodel>
+    <name>Brimstone Release L</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal1</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.57411 </x-m>
+      <y-m> -1.32580 </y-m>
+      <z-m> -1.51280 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Brimstone Release R</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal2</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.57411 </x-m>
+      <y-m> -1.32580 </y-m>
+      <z-m> -1.51280 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Brimstone Release 1L</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal3</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m> -1.49180 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Brimstone Release 1R</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal4</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m>  1.49180 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Brimstone Release 2L</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal5</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m> -1.15740 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>Brimstone Release 2R</name>
+    <model            alias="../../missile/model"/>
+    <trigger>/controls/signal6</trigger>
+    <speed            alias="../../missile/speed"/>
+    <repeat           alias="../../missile/repeat"/>
+    <delay            alias="../../missile/delay"/>
+    <count            alias="../../missile/count"/>
+    <life             alias="../../missile/life"/>
+    <wind             alias="../../missile/wind"/>
+    <weight           alias="../../missile/weight"/>
+    <cd               alias="../../missile/cd"/>
+    <eda              alias="../../missile/eda"/>
+    <fuse-range       alias="../../missile/fuse-range"/>
+    <aero-stabilised  alias="../../missile/aero-stabilised"/>
+    <collision        alias="../../missile/collision"/>
+    <impact           alias="../../missile/impact"/>
+    <impact-reports   alias="../../missile/impact-reports"/>
+    <submodel-path    alias="../../missile/submodel-path"/>
+    <yaw-offset       alias="../../missile/yaw-offset"/>
+    <pitch-offset     alias="../../missile/pitch-offset"/>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m>  1.15740 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </submodel>
+
+  <!-- GBU-54 Bomb -->
+  <bomb>
+    <model>Aircraft/P180/Models/Effects/Weapons/GBU-54.xml</model>
+    <speed-prop>
+      <property>velocities/airspeed-kt</property>
+    </speed-prop>
+    <repeat>false</repeat>
+    <delay>0.2</delay>
+    <count>-1</count>
+    <life>1000</life>
+    <wind>false</wind>
+    <weight>500</weight>
+    <cd>0.295</cd>
+    <eda>0.61629</eda>
+    <fuse-range>2.2</fuse-range>
+    <aero-stabilised>true</aero-stabilised>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-reports>ai/models/model-impact</impact-reports>
+    <submodel-path>Aircraft/P180/Models/Effects/Weapons/Impact/bomb-impact.xml</submodel-path>
+  </bomb>
+
+  <!-- GBU-54 Launcher -->
+  <submodel>
+    <name>GBU54 release L</name>
+    <model            alias="../../bomb/model"/>
+    <trigger>controls/signal7</trigger>
+    <speed-prop       alias="../../bomb/speed-prop"/>
+    <repeat           alias="../../bomb/repeat"/>
+    <delay            alias="../../bomb/delay"/>
+    <count            alias="../../bomb/count"/>
+    <life             alias="../../bomb/life"/>
+    <wind             alias="../../bomb/wind"/>
+    <weight           alias="../../bomb/weight"/>
+    <cd               alias="../../bomb/cd"/>
+    <eda              alias="../../bomb/eda"/>
+    <fuse-range       alias="../../bomb/fuse-range"/>
+    <aero-stabilised  alias="../../bomb/aero-stabilised"/>
+    <collision        alias="../../bomb/collision"/>
+    <impact           alias="../../bomb/impact"/>
+    <impact-reports   alias="../../bomb/impact-reports"/>
+    <submodel-path    alias="../../bomb/submodel-path"/>
+    <yaw-offset       alias="../../bomb/yaw-offset"/>
+    <pitch-offset     alias="../../bomb/pitch-offset"/>
+    <offsets>
+      <x-m> -0.60239 </x-m>
+      <y-m> -1.32640 </y-m>
+      <z-m> -1.52940 </z-m>
+    </offsets>
+  </submodel>
+
+  <submodel>
+    <name>GBU54 release R</name>
+    <model            alias="../../bomb/model"/>
+    <trigger>controls/signal8</trigger>
+    <speed-prop       alias="../../bomb/speed-prop"/>
+    <repeat           alias="../../bomb/repeat"/>
+    <delay            alias="../../bomb/delay"/>
+    <count            alias="../../bomb/count"/>
+    <life             alias="../../bomb/life"/>
+    <wind             alias="../../bomb/wind"/>
+    <weight           alias="../../bomb/weight"/>
+    <cd               alias="../../bomb/cd"/>
+    <eda              alias="../../bomb/eda"/>
+    <fuse-range       alias="../../bomb/fuse-range"/>
+    <aero-stabilised  alias="../../bomb/aero-stabilised"/>
+    <collision        alias="../../bomb/collision"/>
+    <impact           alias="../../bomb/impact"/>
+    <impact-reports   alias="../../bomb/impact-reports"/>
+    <submodel-path    alias="../../bomb/submodel-path"/>
+    <yaw-offset       alias="../../bomb/yaw-offset"/>
+    <pitch-offset     alias="../../bomb/pitch-offset"/>
+    <offsets>
+      <x-m> -0.60239 </x-m>
+      <y-m>  1.32640 </y-m>
+      <z-m> -1.52940 </z-m>
+    </offsets>
+  </submodel>
+
+
+<!-- DASS Flares Launchers -->
+
+  <submodel>
+    <name>flaresL</name>
+    <model>Aircraft/P180/Models/Effects/Weapons/Flares/flare-complet.xml</model>
+    <trigger>/flares/release</trigger>
+    <speed>90</speed>
+    <repeat>true</repeat>
+    <delay>0.4</delay>
+    <count>-1</count>
+    <offsets>
+      <x-m>  4.87220 </x-m>
+      <y-m> -0.25109 </y-m>
+      <z-m> -0.53049 </z-m>
+      <heading-deg>256</heading-deg>
+    </offsets>
+    <life>5</life>
+    <buoyancy>8</buoyancy>
+    <eda>0.2</eda>
+    <collision>false</collision>
+  </submodel>
+
+  <submodel>
+    <name>flaresR</name>
+    <model>Aircraft/P180/Models/Effects/Weapons/Flares/flare-complet.xml</model>
+    <trigger>/flares/release</trigger>
+    <speed>90</speed>
+    <repeat>true</repeat>
+    <delay>0.4</delay>
+    <count>-1</count>
+    <offsets>
+      <x-m>  4.87220 </x-m>
+      <y-m>  0.25109 </y-m>
+      <z-m> -0.53049 </z-m>
+      <heading-deg>104</heading-deg>
+    </offsets>
+    <life>5</life>
+    <buoyancy>8</buoyancy>
+    <eda>0.2</eda>
+    <collision>false</collision>
+  </submodel>
+
+  <submodel>
+    <name>flaresC</name>
+    <model>Aircraft/P180/Models/Effects/Weapons/Flares/flare-complet.xml</model>
+    <trigger>/flares/release</trigger>
+    <speed>90</speed>
+    <repeat>true</repeat>
+    <delay>0.4</delay>
+    <count>-1</count>
+    <offsets>
+      <x-m>  5.30930 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -0.63414 </z-m>
+      <pitch-deg>-100</pitch-deg>
+    </offsets>
+    <life>5</life>
+    <buoyancy>8</buoyancy>
+    <eda>0.2</eda>
+    <collision>false</collision>
+  </submodel>
+
+</PropertyList>

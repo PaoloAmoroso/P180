@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <!-- P1HH: A/G Weapons-->
+
+  <!-- 2x Brimstone -->
+  <model>
+    <name>Brimstone-L</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.57411 </x-m>
+      <y-m> -1.32580 </y-m>
+      <z-m> -1.51280 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Brimstone-R</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.57411 </x-m>
+      <y-m>  1.32580 </y-m>
+      <z-m> -1.51280 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>Brimstone-L</object-name>
+    <object-name>Brimstone-R</object-name>
+    <condition>
+      <property>sim/model/show-brimstone2</property>
+    </condition>
+  </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-L</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone2-number</property>
+      <value>1</value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-R</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone2-number</property>
+      <value>0</value>
+    </greater-than>
+  </condition>
+</animation>
+
+  <!-- 4x Brimstone -->
+  <model>
+    <name>DuoRack-L</name>
+    <path>DuoRack.xml</path>
+    <offsets>
+      <x-m>  0.0000 </x-m>
+      <y-m> -1.3258 </y-m>
+      <z-m> -1.4906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>DuoRack-R</name>
+    <path>DuoRack.xml</path>
+    <offsets>
+      <x-m>  0.0000 </x-m>
+      <y-m>  1.3258 </y-m>
+      <z-m> -1.4906 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Brimstone-1L</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m> -1.49180 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Brimstone-2L</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m> -1.15740 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Brimstone-1R</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m>  1.49180 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Brimstone-2R</name>
+    <path>Brimstone.xml</path>
+    <offsets>
+      <x-m> -0.61498 </x-m>
+      <y-m>  1.15740 </y-m>
+      <z-m> -1.67190 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>DuoRack-L</object-name>
+    <object-name>DuoRack-R</object-name>
+    <object-name>Brimstone-1L</object-name>
+    <object-name>Brimstone-1R</object-name>
+    <object-name>Brimstone-2L</object-name>
+    <object-name>Brimstone-2R</object-name>
+    <condition>
+      <property>sim/model/show-brimstone4</property>
+    </condition>
+  </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-1L</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone4-number</property>
+      <value>3</value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-1R</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone4-number</property>
+      <value>2</value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-2L</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone4-number</property>
+      <value>1</value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>Brimstone-2R</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/brimstone4-number</property>
+      <value>0</value>
+    </greater-than>
+  </condition>
+</animation>
+
+  <!-- 2x GBU-54 -->
+  <model>
+    <name>GBU54-L</name>
+    <path>GBU-54.xml</path>
+    <offsets>
+      <x-m> -0.60239 </x-m>
+      <y-m> -1.32640 </y-m>
+      <z-m> -1.52940 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <name>GBU54-R</name>
+    <path>GBU-54.xml</path>
+    <offsets>
+      <x-m> -0.60239 </x-m>
+      <y-m>  1.32640 </y-m>
+      <z-m> -1.52940 </z-m>
+    </offsets>
+  </model>
+
+  <animation>
+    <type>select</type>
+    <object-name>GBU54-L</object-name>
+    <object-name>GBU54-R</object-name>
+    <condition>
+      <property>sim/model/show-GBU54</property>
+    </condition>
+  </animation>
+
+<animation>
+  <type>select</type>
+  <object-name>GBU54-L</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/GBU54-number</property>
+      <value>1</value>
+    </greater-than>
+  </condition>
+</animation>
+
+<animation>
+  <type>select</type>
+  <object-name>GBU54-R</object-name>
+  <condition>
+    <greater-than>
+      <property>ai/submodels/GBU54-number</property>
+      <value>0</value>
+    </greater-than>
+  </condition>
+</animation>
+
+</PropertyList>
