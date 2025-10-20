@@ -17,9 +17,10 @@
     <object-name>Button2</object-name>
     <object-name>Button3</object-name>
     <object-name>Screen</object-name>
-    <object-name>APT</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
+    <object-name>APT</object-name>
+    <object-name>CLOCK</object-name>
     <object-name>Radar_A</object-name>
     <object-name>Radar_G</object-name>
     <object-name>Radar_S</object-name>
@@ -100,6 +101,22 @@
     <type>string</type>
     <truncate type="bool">false</truncate>
     <property>sim/airport/closest-airport-id</property>
+    <alignment>left-center</alignment>
+  </text>
+
+  <text>
+    <name>CLOCK</name>
+    <font>lucida.txf</font>
+    <character-size type="double">0.008</character-size>
+    <offsets>
+      <x-m> 0.082279 </x-m>
+      <y-m> 0.121350 </y-m>
+      <z-m> 0.252050 </z-m>
+    </offsets>
+    <axis-alignment>yz-plane</axis-alignment>
+    <type type="string">string-value</type>
+    <truncate type="bool">false</truncate>
+    <property>sim/time/local-time-string</property>
     <alignment>left-center</alignment>
   </text>
 
@@ -202,9 +219,10 @@
     <animation>
     <type>select</type>
     <object-name>canvasCadre</object-name>
-    <object-name>APT</object-name>
     <object-name>LAT</object-name>
     <object-name>LON</object-name>
+    <object-name>APT</object-name>
+    <object-name>CLOCK</object-name>
     <object-name>Radar_A</object-name>
     <object-name>Radar_G</object-name>
     <object-name>Radar_S</object-name>
