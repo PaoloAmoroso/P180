@@ -26,7 +26,7 @@
 
   <!-- Brimstone Launcher -->
   <submodel>
-    <name>Brimstone Release L</name>
+    <name>Brimstone Release L missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal1</trigger>
     <speed            alias="../../missile/speed"/>
@@ -54,7 +54,7 @@
   </submodel>
 
   <submodel>
-    <name>Brimstone Release R</name>
+    <name>Brimstone Release R missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal2</trigger>
     <speed            alias="../../missile/speed"/>
@@ -82,7 +82,7 @@
   </submodel>
 
   <submodel>
-    <name>Brimstone Release 1L</name>
+    <name>Brimstone Release 1L missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal3</trigger>
     <speed            alias="../../missile/speed"/>
@@ -110,7 +110,7 @@
   </submodel>
 
   <submodel>
-    <name>Brimstone Release 1R</name>
+    <name>Brimstone Release 1R missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal4</trigger>
     <speed            alias="../../missile/speed"/>
@@ -138,7 +138,7 @@
   </submodel>
 
   <submodel>
-    <name>Brimstone Release 2L</name>
+    <name>Brimstone Release 2L missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal5</trigger>
     <speed            alias="../../missile/speed"/>
@@ -166,7 +166,7 @@
   </submodel>
 
   <submodel>
-    <name>Brimstone Release 2R</name>
+    <name>Brimstone Release 2R missile</name>
     <model            alias="../../missile/model"/>
     <trigger>/controls/signal6</trigger>
     <speed            alias="../../missile/speed"/>
@@ -217,7 +217,7 @@
 
   <!-- GBU-54 Launcher -->
   <submodel>
-    <name>GBU54 release L</name>
+    <name>GBU54 release L bomb</name>
     <model            alias="../../bomb/model"/>
     <trigger>controls/signal7</trigger>
     <speed-prop       alias="../../bomb/speed-prop"/>
@@ -245,7 +245,7 @@
   </submodel>
 
   <submodel>
-    <name>GBU54 release R</name>
+    <name>GBU54 release R bomb</name>
     <model            alias="../../bomb/model"/>
     <trigger>controls/signal8</trigger>
     <speed-prop       alias="../../bomb/speed-prop"/>
