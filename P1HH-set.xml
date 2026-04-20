@@ -91,7 +91,7 @@
 
     <view n="0">
         <internal archive="y">true</internal>
-        <name>Cockpit</name>
+        <name>Main Camera</name>
         <type>lookfrom</type>
         <internal type="bool">true</internal>
         <config>
@@ -121,7 +121,7 @@
   </view>
 
   <view n="102">
-    <name>Nose Camera</name>
+    <name>FLIR Camera</name>
     <type>lookfrom</type>
     <internal archive="y">true</internal>
     <config>
@@ -591,7 +591,7 @@
       <mode type="string" archive="y">WX</mode>
       <heading-marker type="bool" archive="y">false</heading-marker>
       <lightning type="bool" archive="y">false</lightning>
-      <display-mode type="string">ARC</display-mode>
+      <display-mode type="string">NOARC</display-mode>
         <display-controls>
           <WX type="bool" archive="y">false</WX>
           <data type="bool" archive="y">false</data>
@@ -876,6 +876,7 @@
             <file>Aircraft/P180/Nasal/rain.nas</file>
             <file>Aircraft/P180/Nasal/map.nas</file>
             <file>Aircraft/P180/Nasal/dialog.nas</file>
+            <file>Aircraft/P180/Nasal/HUD.nas</file>
 	</p180>
 
      <doors>
