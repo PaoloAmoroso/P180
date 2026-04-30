@@ -226,8 +226,14 @@
 
         <key>
             <name>h</name>
-            <desc>Toggle HUD</desc>
+            <desc>HUD Toggle</desc>
         </key>
+
+        <key>
+            <name>I</name>
+            <desc>HUD Mode</desc>
+        </key>
+
 
         <key>
             <name>d</name>
