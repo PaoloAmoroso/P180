@@ -593,7 +593,7 @@
       <mode type="string" archive="y">WX</mode>
       <heading-marker type="bool" archive="y">false</heading-marker>
       <lightning type="bool" archive="y">false</lightning>
-      <display-mode type="string">ARC</display-mode>
+      <display-mode type="string">NOARC</display-mode>
         <display-controls>
           <WX type="bool" archive="y">false</WX>
           <data type="bool" archive="y">false</data>
