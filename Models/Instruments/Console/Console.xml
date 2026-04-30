@@ -205,6 +205,15 @@
       <y-m> -0.087032 </y-m>
       <z-m>  0.186700 </z-m>
     </offsets>
+    <overlay>
+      <animation n="all">
+        <type>scale</type>
+        <property>constants/zero</property>
+        <x-offset> 1.3 </x-offset>
+        <y-offset> 1.3 </y-offset>
+        <z-offset> 1.3 </z-offset>
+      </animation>
+    </overlay>
   </model>
 
   <animation>
