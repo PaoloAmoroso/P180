@@ -249,10 +249,9 @@
   
     <effect>
     <inherits-from>Aircraft/P180/Models/Effects/Skin/skin-reflect</inherits-from>
-    <object-name>fuselage</object-name>
-    <object-name>Udoor1</object-name>
-    <object-name>Ddoor1a</object-name>
-    <object-name>Ddoor1b</object-name>
+    <object-name>fuselage_1</object-name>
+    <object-name>Udoor1_1</object-name>
+    <object-name>Ddoor1a_1</object-name>
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
