@@ -37,6 +37,12 @@
       <button>0</button>
       <binding>
         <command>property-toggle</command>
+        <property>controls/electric/battery-switch</property>
+        <value>1</value>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
         <property>controls/engines/engine[0]/condition</property>
         <value>1</value>
         <value>0</value>
