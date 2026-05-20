@@ -9,6 +9,11 @@
         <label>Autostart</label>
         <binding>
           <command>property-assign</command>
+          <property>/controls/electric/battery-switch</property>
+          <value>1.0</value>
+        </binding>
+        <binding>
+          <command>property-assign</command>
           <property>/controls/lighting/instrument-lights</property>
           <value>1.0</value>
         </binding>
@@ -69,6 +74,11 @@
 
       <item>
         <label>Autostop</label>
+        <binding>
+          <command>property-assign</command>
+          <property>/controls/electric/battery-switch</property>
+          <value>0.0</value>
+        </binding>
         <binding>
           <command>property-assign</command>
           <property>/controls/lighting/instrument-lights</property>
