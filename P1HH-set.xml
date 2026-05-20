@@ -301,7 +301,7 @@
     <controls>
         <init_starting type = "bool">1</init_starting>
         <electric>
-            <battery-switch type = "bool">1</battery-switch>
+            <battery-switch type = "bool">0</battery-switch>
             <avionics-switch type = "bool">1</avionics-switch>
             <external-power type = "bool">1</external-power>
              <engine n="0">

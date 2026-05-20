@@ -297,7 +297,7 @@
     <controls>
         <init_starting type = "bool">1</init_starting>
         <electric>
-            <battery-switch type = "bool">1</battery-switch>
+            <battery-switch type = "bool">0</battery-switch>
             <avionics-switch type = "bool">1</avionics-switch>
             <external-power type = "bool">1</external-power>
              <engine n="0">
@@ -439,7 +439,7 @@
       <arpt type="bool">1</arpt>
       <vor type="bool">1</vor>
       <fix type="bool">0</fix>
-      <tcas type="bool">0</tcas>
+      <tcas type="bool">1</tcas>
     </display>
     <line-width type="double">3</line-width>
   </nd>
