@@ -16,11 +16,18 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowsE</object-name>
     <object-name>Udoor1</object-name>
     <object-name>Ddoor1a</object-name>
     <object-name>Ddoor1b</object-name>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
+    <object-name>Cdoor_0</object-name>
+    <object-name>Cdoor_1</object-name>
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
@@ -34,8 +41,6 @@
     <object-name>Support</object-name>    
     <object-name>cloison2</object-name>
     <object-name>CargoArea</object-name>
-    <object-name>CargoDoor</object-name>    
-    <object-name>CargoDoorInt</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -136,11 +141,18 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowsE</object-name>
     <object-name>Udoor1</object-name>
     <object-name>Ddoor1a</object-name>
     <object-name>Ddoor1b</object-name>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
+    <object-name>Cdoor_0</object-name>
+    <object-name>Cdoor_1</object-name>
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
@@ -154,8 +166,6 @@
     <object-name>Support</object-name>    
     <object-name>cloison2</object-name>
     <object-name>CargoArea</object-name>
-    <object-name>CargoDoor</object-name>    
-    <object-name>CargoDoorInt</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -1671,8 +1681,8 @@
   <!-- Baggage Door -->
   <animation>
     <type>pick</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_0</object-name>
+    <object-name>Cdoor_1</object-name>
     <visible>true</visible>
     <action>
       <button>0</button>
@@ -1697,8 +1707,8 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_0</object-name>
+    <object-name>Cdoor_1</object-name>
     <property>sim/model/door-positions/cargo/position-norm</property>
     <interpolation>
       <entry>
@@ -1722,8 +1732,8 @@
 
   <animation>
     <type>translate</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_0</object-name>
+    <object-name>Cdoor_1</object-name>
     <property>sim/model/door-positions/cargo/position-norm</property>
     <interpolation>
       <entry>
@@ -1733,6 +1743,117 @@
         <ind>1.0</ind><dep>-0.10</dep>
       </entry>
     </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <!-- Emergency Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
+    <object-name>WindowE</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <less-than>
+              <property>/gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.emergency.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>10</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-10</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
     <axis>
       <x>0</x>
       <y>0</y>

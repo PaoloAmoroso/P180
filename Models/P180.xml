@@ -19,6 +19,10 @@
     <object-name>Udoor1</object-name>
     <object-name>Ddoor1a</object-name>
     <object-name>Ddoor1b</object-name>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
@@ -26,11 +30,12 @@
     <object-name>antennaM1</object-name>
     <object-name>antennaM2</object-name>
     <object-name>antennaVOR</object-name>
-    <object-name>EVS</object-name>     
+    <object-name>EVS</object-name>
+    <object-name>LandingLights</object-name>          
     <object-name>cloison2</object-name>
     <object-name>CargoArea</object-name>
-    <object-name>CargoDoor</object-name>    
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_1</object-name>    
+    <object-name>Cdoor_0</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -122,8 +127,9 @@
     <object-name>Rmanche3</object-name>
 
     <!-- Objets transparents -->
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowE</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
@@ -136,6 +142,12 @@
     <object-name>Udoor1</object-name>
     <object-name>Ddoor1a</object-name>
     <object-name>Ddoor1b</object-name>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
+    <object-name>Cdoor_1</object-name>    
+    <object-name>Cdoor_0</object-name>
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
@@ -143,11 +155,10 @@
     <object-name>antennaM1</object-name>
     <object-name>antennaM2</object-name>
     <object-name>antennaVOR</object-name>
-    <object-name>EVS</object-name>     
+    <object-name>EVS</object-name>
+    <object-name>LandingLights</object-name>               
     <object-name>cloison2</object-name>
     <object-name>CargoArea</object-name>
-    <object-name>CargoDoor</object-name>    
-    <object-name>CargoDoorInt</object-name>
     <object-name>Lseat</object-name>
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
@@ -252,6 +263,8 @@
     <object-name>fuselage_1</object-name>
     <object-name>Udoor1_1</object-name>
     <object-name>Ddoor1a_1</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Cdoor_1</object-name>    
     <object-name>antenna1</object-name>
     <object-name>antenna2</object-name>
     <object-name>antenna3</object-name>
@@ -259,8 +272,8 @@
     <object-name>antennaM1</object-name>
     <object-name>antennaM2</object-name>
     <object-name>antennaVOR</object-name>
-    <object-name>EVS</object-name>     
-    <object-name>CargoDoor</object-name>    
+    <object-name>EVS</object-name>
+    <object-name>LandingLights</object-name>              
     <object-name>Lplaque</object-name>
     <object-name>Rplaque</object-name>
     <object-name>trappe1</object-name>
@@ -355,8 +368,8 @@
         
   <animation>
     <type>noshadow</type>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
     <object-name>propdiscG</object-name>
     <object-name>propblurG</object-name>
     <object-name>propdiscD</object-name>
@@ -366,26 +379,30 @@
   <!-- HDR SELECTION - Comment out what do you don't need -->
   <!-- <effect>
     <inherits-from>Effects/model-transparent</inherits-from>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowE</object-name>
   </effect> -->
 
   <effect>
     <inherits-from>Aircraft/P180/Models/Effects/Interior/reflectglass</inherits-from>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowE</object-name>
   </effect>
     
   <effect>
     <inherits-from>Aircraft/P180/Models/Effects/Glass/glass-rain-inside</inherits-from>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowE</object-name>
    </effect>
    
    <effect>
     <inherits-from>Aircraft/P180/Models/Effects/Glass/glass-rain-outside</inherits-from>
-    <object-name>verriere</object-name>
-    <object-name>windows</object-name>
+    <object-name>Windows</object-name>
+    <object-name>WindowsP</object-name>
+    <object-name>WindowE</object-name>
    </effect>
 
    <model>
@@ -1236,7 +1253,7 @@
     <object-name>Nbogey4</object-name>
     <object-name>Nbogey5</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor>-30</factor>  
+    <factor>-53</factor>  
     <axis>
       <x1-m>-4.97</x1-m>
       <y1-m>0.0</y1-m>
@@ -1251,7 +1268,7 @@
     <type>rotate</type>
     <object-name>Nroues</object-name>
     <property>surface-positions/rudder-pos-norm</property>
-    <factor>30</factor>
+    <factor>53</factor>
     <center>
       <x-m> -5.0202 </x-m>
       <y-m>  0.0000 </y-m>
@@ -1793,8 +1810,8 @@
   <!-- Baggage Door -->
   <animation>
     <type>pick</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_1</object-name>
+    <object-name>Cdoor_0</object-name>
     <visible>true</visible>
     <action>
       <button>0</button>
@@ -1819,8 +1836,8 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_1</object-name>
+    <object-name>Cdoor_0</object-name>
     <property>sim/model/door-positions/cargo/position-norm</property>
     <interpolation>
       <entry>
@@ -1844,8 +1861,8 @@
 
   <animation>
     <type>translate</type>
-    <object-name>CargoDoor</object-name>
-    <object-name>CargoDoorInt</object-name>
+    <object-name>Cdoor_1</object-name>
+    <object-name>Cdoor_0</object-name>
     <property>sim/model/door-positions/cargo/position-norm</property>
     <interpolation>
       <entry>
@@ -1855,6 +1872,117 @@
         <ind>1.0</ind><dep>-0.10</dep>
       </entry>
     </interpolation>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <!-- Emergency Door -->
+  <animation>
+    <type>pick</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>Edoor_2b</object-name>
+    <object-name>WindowE</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <condition>
+          <and>
+            <property>/gear/gear[0]/wow</property>
+            <property>/gear/gear[1]/wow</property>
+            <property>/gear/gear[2]/wow</property>
+            <less-than>
+              <property>/gear/gear[0]/rollspeed-ms</property>
+              <value>10</value>
+            </less-than>
+          </and>
+        </condition>
+        <command>nasal</command>
+        <script>doors.emergency.toggle();</script>
+      </binding>
+    </action>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>10</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>Edoor_0</object-name>
+    <object-name>Edoor_1</object-name>
+    <object-name>Edoor_2a</object-name>
+    <object-name>WindowE</object-name>
+    <property>sim/model/door-positions/emergency/position-norm</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1.0</ind><dep>-10</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.08</x-m>
+      <y-m> 0.64</y-m>
+      <z-m>-0.05</z-m>
+    </center>
     <axis>
       <x>0</x>
       <y>0</y>
@@ -2393,6 +2521,78 @@
         <condition>
             <equals>
                 <property>controls/lighting/beacon</property>
+                <value>1</value>
+            </equals>
+        </condition>
+    </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>LandingLights</object-name>
+    <property>controls/lighting/landing-lights</property>
+    <interpolation>
+      <entry>
+        <ind>0</ind><dep>0</dep>
+      </entry>
+      <entry>
+        <ind>1</ind><dep>46</dep>
+      </entry>
+    </interpolation>   
+    <center>
+      <x-m>-5.8968</x-m>
+      <y-m> 0.0000</y-m>
+      <z-m>-1.3519</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <model>
+    <name>Landing_L</name>
+    <path>Aircraft/P180/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m> -6.013 </x-m>
+      <y-m> -0.063 </y-m>
+      <z-m> -1.3783 </z-m>
+      <pitch-deg>-12.5</pitch-deg>
+      <heading-deg>22.8</heading-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Landing_C</name>
+    <path>Aircraft/P180/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m> -6.013 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.3783 </z-m>
+      <pitch-deg>-12.5</pitch-deg>
+    </offsets>
+  </model>
+
+  <model>
+    <name>Landing_R</name>
+    <path>Aircraft/P180/Models/light/light-cone.xml</path>
+    <offsets>
+      <x-m> -6.013 </x-m>
+      <y-m>  0.063 </y-m>
+      <z-m> -1.3783 </z-m>
+      <pitch-deg>-12.5</pitch-deg>
+      <heading-deg>-22.8</heading-deg>
+    </offsets>
+  </model>
+
+    <animation>
+        <type>select</type>
+        <object-name>Landing_C</object-name>
+        <object-name>Landing_L</object-name>
+        <object-name>Landing_R</object-name>
+        <condition>
+            <equals>
+                <property>controls/lighting/landing-lights</property>
                 <value>1</value>
             </equals>
         </condition>
