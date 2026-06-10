@@ -244,10 +244,26 @@
             <name>D</name>
             <desc>Toggle Cargo Door</desc>
         </key>
-        
+<!--
         <key>
             <name>l</name>
-            <desc>Toggle Lights</desc>
+            <desc>On/Off Landing lights</desc>
+        </key>
+-->
+        <key>
+            <name>k</name>
+            <desc>On/Off Beacon light</desc>
+        </key>
+
+        <key>
+            <name>Ctrl-k</name>
+            <desc>On/Off Navigation lights</desc>
+        </key>
+
+
+        <key>
+            <name>K</name>
+            <desc>On/Off Strobes lights</desc>
         </key>
 
         <key>
@@ -653,22 +669,41 @@
             <property>/sim/sound/switch</property>
         </binding> 
     </key>
-        
+<!--
     <key n="108">
       <name>l</name>
-      <desc>Toggle lights</desc>
+      <desc>Landing lights</desc>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/lighting/nav-lights</property>
+        <property>/controls/lighting/landing-lights</property>
       </binding>
+    </key>
+-->
+    <key n="11">
+      <name>Ctrl-k</name>
+      <desc>Toggle Nav Lights</desc>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/lighting/instrument-lights</property>
-      </binding>    
-       <binding>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+    </key>
+
+  <key n="75">
+      <name>K</name>
+      <desc>Toggle Strobe Lights</desc>
+      <binding>
         <command>property-toggle</command>
-        <property>/sim/sound/switch</property>
-      </binding> 
+        <property>controls/lighting/strobe</property>
+      </binding>
+    </key>
+
+  <key n="107">
+      <name>k</name>
+      <desc>Toggle Beacon</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
     </key>
     
     <key n="115">

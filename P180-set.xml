@@ -248,7 +248,23 @@
         
         <key>
             <name>l</name>
-            <desc>Toggle Lights</desc>
+            <desc>On/Off Landing lights</desc>
+        </key>
+
+        <key>
+            <name>k</name>
+            <desc>On/Off Beacon light</desc>
+        </key>
+
+        <key>
+            <name>Ctrl-k</name>
+            <desc>On/Off Navigation lights</desc>
+        </key>
+
+
+        <key>
+            <name>K</name>
+            <desc>On/Off Strobes lights</desc>
         </key>
 
         <key>
@@ -295,6 +311,7 @@
 </sim>
 
     <controls>
+
         <init_starting type = "bool">1</init_starting>
         <electric>
             <battery-switch type = "bool">0</battery-switch>
@@ -314,6 +331,7 @@
             <nav-lights type = "double">0.0</nav-lights>
             <strobe type = "double">0.0</strobe>
             <beacon type = "double">0.0</beacon>
+            <landing-lights type = "double">0.0</landing-lights>
         </lighting>
 
         <gear>
@@ -322,26 +340,79 @@
 
         <engines>
             <engine n="0">
-                <condition>0</condition>
-                <rpm type = "double">0.0</rpm>
+                <engine-num type="int">0</engine-num>
+                <on type="bool">false</on>
+                <rpm type="float">0</rpm>
+                <boost type="double">0</boost>
+                <cutoff type="bool">true</cutoff>
+                <magnetos type="int">0</magnetos>
+                <condition type="double">0</condition>
+                <condition-lever type="float">0</condition-lever>
+
+                <rpm type = "float">0.0</rpm>
                 <propeller-pitch>1</propeller-pitch>
                 <throttle type = "double">0</throttle>
-                <n1 type = "double">0.0</n1>
+                <n1 type = "float">0.0</n1>
                 <n2 type = "double">0.0</n2>
+                <itt-norm type = "string">0.0</itt-norm>
+                <egt-degC type = "float">0</egt-degC>
+                <oil-temperature-degC type = "float">0</oil-temperature-degC>
                 <running type = "bool">false</running>
             </engine>
             <engine n="1">
-                <condition>0</condition>
-                <rpm type = "double">0.0</rpm>
+                <engine-num type="int">1</engine-num>
+                <on type="bool">false</on>
+                <rpm type="float">0</rpm>
+                <boost type="double">0</boost>
+                <cutoff type="bool">true</cutoff>
+                <magnetos type="int">0</magnetos>
+                <condition type="double">0</condition>
+                <condition-lever type="float">0</condition-lever>
+
+                <rpm type = "float">0.0</rpm>
                 <propeller-pitch>1</propeller-pitch>
                 <throttle type = "double">0</throttle>
-                <n1 type = "double">0.0</n1>
+                <n1 type = "float">0.0</n1>
                 <n2 type = "double">0.0</n2>
+                <itt-norm type = "string">0.0</itt-norm>
+                <egt-degC type = "float">0</egt-degC>
+                <oil-temperature-degC type = "float">0</oil-temperature-degC>
                 <running type = "bool">false</running>
             </engine>
         </engines>
 
     </controls>
+
+    <engines>
+            <engine n="0">
+                <engine-num type="int">0</engine-num>
+                <condition>0</condition>
+                <rpm type = "float">0.0</rpm>
+                <propeller-pitch>1</propeller-pitch>
+                <throttle type = "double">0</throttle>
+                <n1 type = "float">0.0</n1>
+                <n2 type = "float">0.0</n2>
+                <itt-norm type = "string">0.0</itt-norm>
+                <egt-degC type = "float">0</egt-degC>
+                <oil-temperature-degC type = "float">0</oil-temperature-degC>
+                <fuel-pressure-psi type="float">0</fuel-pressure-psi>
+                <running type = "bool">false</running>
+            </engine>
+            <engine n="1">
+                <engine-num type="int">1</engine-num>
+                <condition>0</condition>
+                <rpm type = "float">0.0</rpm>
+                <propeller-pitch>1</propeller-pitch>
+                <throttle type = "double">0</throttle>
+                <n1 type = "float">0.0</n1>
+                <n2 type = "float">0.0</n2>
+                <itt-norm type = "string">0.0</itt-norm>
+                <egt-degC type = "float">0</egt-degC>
+                <oil-temperature-degC type = "float">0</oil-temperature-degC>
+                <fuel-pressure-psi type="float">0</fuel-pressure-psi>
+                <running type = "bool">false</running>
+            </engine>
+    </engines>
 
     <consumables>
         <fuel>
@@ -356,20 +427,6 @@
         </fuel>
     </consumables>
     
-    <!-- <engines>
-        <engine n="0">
-            <rpm type = "double">0.0</rpm>
-            <n1 type = "double">0.0</n1>
-            <n2 type = "double">0.0</n2>
-            <running type = "bool">false</running>
-        </engine>
-        <engine n="1">
-            <rpm type = "double">0.0</rpm>
-            <n2 type = "double">0.0</n2>
-            <running type = "bool">false</running>
-        </engine>
-    </engines> -->
-
     <autopilot>
         <locks>
             <passive-mode type="bool">true</passive-mode>
@@ -652,19 +709,38 @@
         
     <key n="108">
       <name>l</name>
-      <desc>Toggle lights</desc>
+      <desc>Landing lights</desc>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/lighting/nav-lights</property>
+        <property>/controls/lighting/landing-lights</property>
       </binding>
+    </key>
+
+    <key n="11">
+      <name>Ctrl-k</name>
+      <desc>Toggle Nav Lights</desc>
       <binding>
         <command>property-toggle</command>
-        <property>/controls/lighting/instrument-lights</property>
-      </binding>    
-       <binding>
+        <property>controls/lighting/nav-lights</property>
+      </binding>
+    </key>
+
+  <key n="75">
+      <name>K</name>
+      <desc>Toggle Strobe Lights</desc>
+      <binding>
         <command>property-toggle</command>
-        <property>/sim/sound/switch</property>
-      </binding> 
+        <property>controls/lighting/strobe</property>
+      </binding>
+    </key>
+
+  <key n="107">
+      <name>k</name>
+      <desc>Toggle Beacon</desc>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+      </binding>
     </key>
     
     <key n="81">
@@ -686,11 +762,12 @@
     
     <nasal>
 	<p180>
-            <!-- file>Aircraft/P180/Nasal/p180.nas</file -->
+            <!-- <file>Aircraft/P180/Nasal/p180.nas</file> -->
             <file>Aircraft/P180/Nasal/light.nas</file>
             <file>Aircraft/P180/Nasal/rain.nas</file>
             <file>Aircraft/P180/Nasal/map.nas</file>
             <file>Aircraft/P180/Nasal/dialog.nas</file>
+            <file>Aircraft/P180/Nasal/convert.nas</file>
 	</p180>
 
      <doors>
@@ -699,6 +776,8 @@
 
      <engines>
       <file>Aircraft/Generic/Engines/generic-yasim-engine.nas</file>
+      <!-- <file>Aircraft/P180/Nasal/generic-yasim-engine.nas</file>
+      <file>Aircraft/P180/Nasal/engines-yasim.nas</file> -->
      </engines>
 
      <liveries>
