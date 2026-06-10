@@ -43,7 +43,19 @@
       </binding>
       <binding>
         <command>property-toggle</command>
+        <property>controls/lighting/beacon</property>
+        <value>1</value>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
         <property>controls/lighting/nav-lights</property>
+        <value>1</value>
+        <value>0</value>
+      </binding>
+      <binding>
+        <command>property-toggle</command>
+        <property>controls/lighting/strobe</property>
         <value>1</value>
         <value>0</value>
       </binding>
