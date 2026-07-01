@@ -945,12 +945,8 @@
     </HUD>
 
     <radar>
-      <file>Aircraft/P180/Nasal/radar.nas</file>
+      <file>Aircraft/P180/Nasal/Radar.nas</file>
     </radar>
-
-    <terrain-map>
-      <file>Aircraft/P180/Nasal/terrain-map.nas</file>
-    </terrain-map>
 
     <damage>
 	 <file>Aircraft/P180/Nasal/damage.nas</file>
